@@ -13,7 +13,7 @@ You can create an HTML version of the reference manual like this:
 - Create a local copy of this repository
 - Open a terminal in the root directory of your local repository
 - Execute the following OS command:
-  
+
   `pmlc convert --input_file input/text/index.pml`
 
 ## More info

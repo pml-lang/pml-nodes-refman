@@ -160,7 +160,8 @@
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -243,7 +244,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -324,7 +326,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                             [html
                                 <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                     <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -504,7 +507,8 @@ Text for marker
                             [html
                                 <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                     <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -607,11 +611,21 @@ Text for marker
                             [html
                                 <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                     <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>halign</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>This optional parameter specifies the horizontal alignment for each column in a table.<br />The alignments are defined as a comma-separated list, in the order of the columns.<br />For each column the following values can be specified:<br />- left or l<br />- center or c<br />- right or r<br />- {empty} (default alignment (usually left-aligned) will be used)<br />The values are case-insensitive. Uppercase letters are allowed.</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>This optional parameter specifies the horizontal alignment for each column in a table.
+<br />The alignments are defined as a comma-separated list, in the order of the columns.
+<br />For each column the following values can be specified:
+<br />- left or l
+<br />- center or c
+<br />- right or r
+<br />- {empty} (default alignment (usually left-aligned) will be used)
+<br />The values are case-insensitive. Uppercase letters are allowed.</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Example:</td><td><br />halign = &quot;Left, Center, , Right&quot;<br />short from:<br />halign = &quot;L, C, , R&quot;</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>
+<br />halign = &quot;Left, Center, , Right&quot;
+<br />short from:
+<br />halign = &quot;L, C, , R&quot;</td></tr>
                                 </table>
                             html]
                         ]
@@ -619,7 +633,8 @@ Text for marker
                             [html
                                 <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                     <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -747,7 +762,8 @@ table_data]
                             [html
                                 <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                     <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -1398,7 +1414,8 @@ Table with 2 rows and 3 columns:
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -1473,7 +1490,8 @@ Table with 2 rows and 3 columns:
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -1546,7 +1564,8 @@ Table with 2 rows and 3 columns:
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -1679,7 +1698,8 @@ Table with 2 rows and 3 columns:
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -1759,7 +1779,8 @@ Table with 2 rows and 3 columns:
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -1828,7 +1849,8 @@ Table with 2 rows and 3 columns:
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -1956,7 +1978,8 @@ html]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -2079,7 +2102,8 @@ html]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -2185,7 +2209,8 @@ html]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -2303,7 +2328,8 @@ html]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -2401,7 +2427,8 @@ html]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -2494,11 +2521,14 @@ j = 1;</code></pre>
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>from_regex</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>If this parameter is not defined (set to null by default) then the source code inserted into the document starts at the beginning of the file content. A regular expression can be assigned to this parameter. In that case the source code inserted into the document starts at the first match of the regular expression in the source code file.<br /><br />If parameter 'include_from_regex' is set to 'yes' (default value), then the string that matches the regex is included in the document's source code. If parameter 'include_from_regex' is set to 'no' then the string that matches the regex is not included in the document's source code.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>If this parameter is not defined (set to null by default) then the source code inserted into the document starts at the beginning of the file content. A regular expression can be assigned to this parameter. In that case the source code inserted into the document starts at the first match of the regular expression in the source code file.
+<br />
+<br />If parameter 'include_from_regex' is set to 'yes' (default value), then the string that matches the regex is included in the document's source code. If parameter 'include_from_regex' is set to 'no' then the string that matches the regex is not included in the document's source code.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>regex or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>from_regex = &quot;function foo ( name string )&quot;<br />from_regex = &quot;// start insert.*\r?\n&quot; include_from_regex = no</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>from_regex = &quot;function foo ( name string )&quot;
+<br />from_regex = &quot;// start insert.*\r?\n&quot; include_from_regex = no</td></tr>
                             </table>
                         html]
                     ]
@@ -2518,7 +2548,8 @@ j = 1;</code></pre>
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -2578,11 +2609,14 @@ j = 1;</code></pre>
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>to_regex</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>If this parameter is not defined (set to null by default) then the source code inserted into the document ends at the end of the file content. A regular expression can be assigned to this parameter. In that case the source code inserted into the document ends at the first match of the regular expression in the source code file. If parameter 'from_regex' is also defined, then the search for this regex starts after the match of 'from_regex'.<br /><br />If parameter 'include_to_regex' is set to 'yes' (default value), then the string that matches the regex is included in the document's source code. If parameter 'include_to_regex' is set to 'no' then the string that matches the regex is not included in the document's source code.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>If this parameter is not defined (set to null by default) then the source code inserted into the document ends at the end of the file content. A regular expression can be assigned to this parameter. In that case the source code inserted into the document ends at the first match of the regular expression in the source code file. If parameter 'from_regex' is also defined, then the search for this regex starts after the match of 'from_regex'.
+<br />
+<br />If parameter 'include_to_regex' is set to 'yes' (default value), then the string that matches the regex is included in the document's source code. If parameter 'include_to_regex' is set to 'no' then the string that matches the regex is not included in the document's source code.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>regex or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>to_regex = &quot;\}\r?\n&quot;<br />to_regex = &quot;\s*// end insert&quot; include_to_regex = no</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>to_regex = &quot;\}\r?\n&quot;
+<br />to_regex = &quot;\s*// end insert&quot; include_to_regex = no</td></tr>
                             </table>
                         html]
                     ]
@@ -2641,7 +2675,8 @@ function start
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -2706,7 +2741,8 @@ input]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.
+<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
