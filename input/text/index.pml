@@ -9,7 +9,7 @@
         [ch (title="Fundamental Nodes")
             [ch (title="Document" id="node_doc")
 
-                [b Tag:] [c doc]
+                [b Tag:] [c \[doc] .. [c \]]
 
                 [p [b Description]]
                 [p Every PML document must start with a 'document' node. It is the root node of the document.]
@@ -149,7 +149,7 @@
             ]
             [ch (title="Paragraph" id="node_p")
 
-                [b Tag:] [c p]
+                [b Tag:] [c \[p] .. [c \]]
 
                 [p [b Description]]
                 [p A paragraph is a set of one or more sentences. Note that it is not required to embed a paragraph within a node. Text not explicitly embedded in a node is automatically converted to a paragraph node. A double-new-line creates a paragraph break. All other whitespace is converted to a single space. Hence, two sentences separated by a single new-line will result in a single paragraph composed of two sentences.]
@@ -223,7 +223,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
             ]
             [ch (title="Chapter" id="node_ch")
 
-                [b Tag:] [c ch]
+                [b Tag:] [c \[ch] .. [c \]]
 
                 [p [b Description]]
                 [p A chapter or sub-chapter of the document. A chapter can have any number of sub-chapters. Chapters can be nested to any level.]
@@ -315,7 +315,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
             [ch (title="List")
                 [ch (title="List" id="node_list")
 
-                    [b Tag:] [c list]
+                    [b Tag:] [c \[list] .. [c \]]
 
                     [p [b Description]]
                     [p A bulleted list of nodes.[nl]CSS can be used to change the item marker's appearance (e.g. use numbers). The CSS must be assigned to attribute 'html_style'. See examples.]
@@ -496,7 +496,7 @@ Text for marker
                 ]
                 [ch (title="List Element" id="node_el")
 
-                    [b Tag:] [c el]
+                    [b Tag:] [c \[el] .. [c \]]
 
                     [p [b Description]]
                     [p An element of a list.]
@@ -600,7 +600,7 @@ Text for marker
             [ch (title="Table")
                 [ch (title="Table Data" id="node_table_data")
 
-                    [b Tag:] [c table_data]
+                    [b Tag:] [c \[table_data] .. [c table_data\]]
 
                     [p [b Description]]
                     [p Simple table data defined as plain text, and rendered as a table.[nl]Each line of text represents a row.[nl]Cell values in a row are separated by a comma or a TAB character.[nl]The content of each cell can only be plain text. If formatted text or complex cell content (e.g. picture in a cell, or table in a table) is needed, then please use the 'table' tag.[nl]A header and footer can optionally be defined.[nl]The horizontal alignment (left, center, or right) can be specified for each column.[nl]The data will be rendered as a table.[nl]The following format rules apply:[nl]- Rows are separated by a line break. Empty lines are ignored.[nl]- Cells can be separated by a comma or a TAB character, but both separators cannot be mixed in a table.[nl]- Spaces before or after cell values are ignored.[nl]- If the second line is a dash (-) then the first line is a header.[nl]- If the second-last line is a dash (-) then the last line is a footer.[nl]]
@@ -739,7 +739,7 @@ table_data]
                 ]
                 [ch (title="Table" id="node_table")
 
-                    [b Tag:] [c table]
+                    [b Tag:] [c \[table] .. [c \]]
 
                     [p [b Description]]
                     [p A table consisting of rows and columns.[nl]The content of each cell can be just plain text or any complex node, such as formatted text, a picture, a table (table in a table), etc.[nl]The table's structure is similar to a HTML table.[nl]HTML 'class' and 'style' attributes can be use to format the table with CSS.[nl]The table can optionally have a header and a footer.]
@@ -969,7 +969,7 @@ Table with header and footer:
                 ]
                 [ch (title="Table Header" id="node_theader")
 
-                    [b Tag:] [c theader]
+                    [b Tag:] [c \[theader] .. [c \]]
 
                     [p [b Description]]
                     [p A header in a table.]
@@ -1089,7 +1089,7 @@ Table with header:
                 ]
                 [ch (title="Table Footer" id="node_tfooter")
 
-                    [b Tag:] [c tfooter]
+                    [b Tag:] [c \[tfooter] .. [c \]]
 
                     [p [b Description]]
                     [p A footer in a table.]
@@ -1209,7 +1209,7 @@ Table with footer:
                 ]
                 [ch (title="Table Row" id="node_tr")
 
-                    [b Tag:] [c tr]
+                    [b Tag:] [c \[tr] .. [c \]]
 
                     [p [b Description]]
                     [p A row in a table.]
@@ -1300,7 +1300,7 @@ Table with 2 rows:
                 ]
                 [ch (title="Table Cell" id="node_tc")
 
-                    [b Tag:] [c tc]
+                    [b Tag:] [c \[tc] .. [c \]]
 
                     [p [b Description]]
                     [p A cell in a table row.]
@@ -1392,7 +1392,7 @@ Table with 2 rows and 3 columns:
             ]
             [ch (title="Admonition" id="node_admon")
 
-                [b Tag:] [c admon]
+                [b Tag:] [c \[admon] .. [c \]]
 
                 [p [b Description]]
                 [p A labeled piece of advice, such as a note, tip, warning, etc.]
@@ -1479,7 +1479,7 @@ Table with 2 rows and 3 columns:
             ]
             [ch (title="Note" id="node_note")
 
-                [b Tag:] [c note]
+                [b Tag:] [c \[note] .. [c \]]
 
                 [p [b Description]]
                 [p A note is an admonition whose label is 'Note'.]
@@ -1553,7 +1553,7 @@ Table with 2 rows and 3 columns:
             ]
             [ch (title="Quote" id="node_quote")
 
-                [b Tag:] [c quote]
+                [b Tag:] [c \[quote] .. [c \]]
 
                 [p [b Description]]
                 [p A piece of text said or written by somebody else.]
@@ -1649,7 +1649,7 @@ Table with 2 rows and 3 columns:
             ]
             [ch (title="Caption" id="node_caption")
 
-                [b Tag:] [c caption]
+                [b Tag:] [c \[caption] .. [c \]]
 
                 [p [b Description]]
                 [p A small title that is not part of he table of contents.]
@@ -1687,7 +1687,7 @@ Table with 2 rows and 3 columns:
             ]
             [ch (title="Monospace" id="node_monospace")
 
-                [b Tag:] [c monospace]
+                [b Tag:] [c \[monospace] .. [c \]]
 
                 [p [b Description]]
                 [p A paragraph in which whitespace is preserved, and a fixed-width font is used. The text will be rendered exactly as written in the PML document.[nl]The following rules apply to the text in a 'monospace' block:[nl]- The width of each character (letter, digit, symbol) is the same.[nl]- All spaces and line-breaks in the text are preserved and rendered in the final document.[nl]Inline nodes can be used within a 'monospace' block. Hence standard character escape rules are applied.]
@@ -1768,7 +1768,7 @@ Table with 2 rows and 3 columns:
             ]
             [ch (title="Division" id="node_div")
 
-                [b Tag:] [c div]
+                [b Tag:] [c \[div] .. [c \]]
 
                 [p [b Description]]
                 [p A division or section in the document. This node is typically used to render a HTML <div>...</div> block with a specific set of HTML attributes.]
@@ -1838,7 +1838,7 @@ Table with 2 rows and 3 columns:
             ]
             [ch (title="HTML Code" id="node_html")
 
-                [b Tag:] [c html]
+                [b Tag:] [c \[html] .. [c html\]]
 
                 [p [b Description]]
                 [p A node that contains HTML code. The HTML code is not processed in any way by the PML converter. It is passed as is to the resulting HTML document. This allows you to embed arbitrary HTML code in your final document.]
@@ -1908,7 +1908,7 @@ html]
         [ch (title="Media")
             [ch (title="Image" id="node_image")
 
-                [b Tag:] [c image]
+                [b Tag:] [c \[image] .. [c \]]
 
                 [p [b Description]]
                 [p An image, such as a .jpg or .png file.[nl]Note about the HTML 'alt' tag:[nl]Attribute 'html_alt' can be used to add an explicit 'alt' attribute in the resulting HTML (see example).[nl]If no explicit 'html_alt' is provided then the value of the 'title' attribute is used for the 'alt' attribute.[nl]If no 'title' attribute is provided then the value of the 'caption' attribute is used.]
@@ -2068,7 +2068,7 @@ html]
             ]
             [ch (title="Audio (Sound)" id="node_audio")
 
-                [b Tag:] [c audio]
+                [b Tag:] [c \[audio] .. [c \]]
 
                 [p [b Description]]
                 [p An audio stream (sound), such as an .mp3 or .wav file.]
@@ -2163,7 +2163,7 @@ html]
             ]
             [ch (title="Video" id="node_video")
 
-                [b Tag:] [c video]
+                [b Tag:] [c \[video] .. [c \]]
 
                 [p [b Description]]
                 [p A video, such as an .mp4 or .webm file.]
@@ -2282,7 +2282,7 @@ html]
             ]
             [ch (title="Embedded Youtube Video" id="node_youtube_video")
 
-                [b Tag:] [c youtube_video]
+                [b Tag:] [c \[youtube_video] .. [c \]]
 
                 [p [b Description]]
                 [p A Youtube video embedded in the document.]
@@ -2404,7 +2404,7 @@ html]
         [ch (title="Software Development ")
             [ch (title="Source Code" id="node_code")
 
-                [b Tag:] [c code]
+                [b Tag:] [c \[code] .. [c code\]]
 
                 [p [b Description]]
                 [p A block of source code.]
@@ -2499,7 +2499,7 @@ j = 1;</code></pre>
             ]
             [ch (title="Insert Source Code" id="node_insert_code")
 
-                [b Tag:] [c insert_code]
+                [b Tag:] [c \[insert_code] .. [c \]]
 
                 [p [b Description]]
                 [p Insert source code stored in an external file.]
@@ -2664,7 +2664,7 @@ function start
             ]
             [ch (title="Input" id="node_input")
 
-                [b Tag:] [c input]
+                [b Tag:] [c \[input] .. [c input\]]
 
                 [p [b Description]]
                 [p Any input provided to a software application, such as a command typed in a terminal, text contained in a config file, etc.]
@@ -2730,7 +2730,7 @@ input]
             ]
             [ch (title="Output" id="node_output")
 
-                [b Tag:] [c output]
+                [b Tag:] [c \[output] .. [c output\]]
 
                 [p [b Description]]
                 [p Any output created by a software application, such as a result written to the OS's standard output device.]
@@ -2805,7 +2805,7 @@ The new database has been created successfully.</pre>
         [ch (title="Font")
             [ch (title="Bold Text" id="node_b")
 
-                [b Tag:] [c b]
+                [b Tag:] [c \[b] .. [c \]]
 
                 [p [b Attributes]]
                 [p This node doesn't have attributes.]
@@ -2840,7 +2840,7 @@ This is a [b huge] advantage.
             ]
             [ch (title="Italic Text" id="node_i")
 
-                [b Tag:] [c i]
+                [b Tag:] [c \[i] .. [c \]]
 
                 [p [b Attributes]]
                 [p This node doesn't have attributes.]
@@ -2879,7 +2879,7 @@ This is a [b [i very] important] point.
             ]
             [ch (title="Subscript Text" id="node_sub")
 
-                [b Tag:] [c sub]
+                [b Tag:] [c \[sub] .. [c \]]
 
                 [p [b Description]]
                 [p Subscript text is rendered in a smaller font below the normal text line.]
@@ -2918,7 +2918,7 @@ This is [sub subscript], and this is [sup superscript]
             ]
             [ch (title="Superscript Text" id="node_sup")
 
-                [b Tag:] [c sup]
+                [b Tag:] [c \[sup] .. [c \]]
 
                 [p [b Description]]
                 [p Superscript text is rendered in a smaller font above the normal text line.]
@@ -2957,7 +2957,7 @@ This is [sup superscript], and this is [sub subscript]
             ]
             [ch (title="Strikethrough Text" id="node_strike")
 
-                [b Tag:] [c strike]
+                [b Tag:] [c \[strike] .. [c \]]
 
                 [p [b Description]]
                 [p Strikethrough text is rendered with a line through it.]
@@ -2999,7 +2999,7 @@ SOLD OUT!
             ]
             [ch (title="Inline Source Code" id="node_c")
 
-                [b Tag:] [c c]
+                [b Tag:] [c \[c] .. [c \]]
 
                 [p [b Description]]
                 [p Source code embedded within text.]
@@ -3038,7 +3038,7 @@ The assignment [c pi = 3.1415] means we are using [i four] decimals for [c pi].
         ]
         [ch (title="URL Link" id="node_link")
 
-            [b Tag:] [c link]
+            [b Tag:] [c \[link] .. [c \]]
 
             [p [b Description]]
             [p A URL link to a resource, such as a website or a file to download.]
@@ -3100,7 +3100,7 @@ Please have a look at [link url=http://www.example.com/articles/123 text=this ar
         ]
         [ch (title="Verbatim Text" id="node_verbatim")
 
-            [b Tag:] [c verbatim]
+            [b Tag:] [c \[verbatim] .. [c \]]
 
             [p [b Attributes]]
             [p This node doesn't have attributes.]
@@ -3135,7 +3135,7 @@ Math's ring operator is [verbatim &#x2218;].
         ]
         [ch (title="Cross-Reference" id="node_xref")
 
-            [b Tag:] [c xref]
+            [b Tag:] [c \[xref] .. [c \]]
 
             [p [b Description]]
             [p A cross-reference (link) to another node in the same document.]
@@ -3217,7 +3217,7 @@ Math's ring operator is [verbatim &#x2218;].
         ]
         [ch (title="Span" id="node_span")
 
-            [b Tag:] [c span]
+            [b Tag:] [c \[span] .. [c \]]
 
             [p [b Description]]
             [p This inline node is typically used to render a HTML <span>...</span> inline element with a specific set of HTML attributes.]
@@ -3255,7 +3255,7 @@ This is a [span html_style="color:red;background-color:yellow" huge] advantage.
         ]
         [ch (title="New Line" id="node_nl")
 
-            [b Tag:] [c nl]
+            [b Tag:] [c \[nl] .. [c \]]
 
             [p [b Description]]
             [p An explicit new line (line break) inserted in the document.]
@@ -3293,7 +3293,7 @@ Line 1[nl][nl]Line 2
         ]
         [ch (title="Space Character" id="node_sp")
 
-            [b Tag:] [c sp]
+            [b Tag:] [c \[sp] .. [c \]]
 
             [p [b Description]]
             [p An explicit space character inserted in the document. Whitespace composed of several characters (such as two spaces) is always converted into a single space (as in HTML). Hence, this node can be used to explicitly insert two or more spaces.]
@@ -3381,7 +3381,7 @@ More text
         ]
         [ch (title="Insert File" id="node_insert")
 
-            [b Tag:] [c insert]
+            [b Tag:] [c \[insert] .. [c \]]
 
             [p [b Description]]
             [p Insert a .pml file in the current document. The text contained in the file is inserted at the position of the 'insert' node. This is useful to split a big document into several files (e.g. each chapter is contained in a different file), or to re-use text snippets that appear in several documents.]
@@ -3414,7 +3414,7 @@ More text
         ]
         [ch (title="Constant Parameter" id="node_const")
 
-            [b Tag:] [c const]
+            [b Tag:] [c \[const] .. [c \]]
 
             [p [b Description]]
             [p A constant parameter is used to define text snippets that are re-used several times in the document. A constant parameter is composed of an identifier (name) and a value. The value assigned to the constant can be re-used in the document by simply specifying the constant's identifier between << and >>.]
