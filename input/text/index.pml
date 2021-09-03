@@ -1,56 +1,24 @@
-[doc (title="PML Reference Manual" authors="Christian Neumanns" date="2021-06-08")
-    [ch (title="Introduction")
-        [p This document describes all standard PML nodes. For each type of node, its tags and attributes are listed, and an example demonstrates how to use it.]
-        [p If you have questions or suggestions then please send an email to contact {at} pml-lang {dot} dev. Thank you.]
+[doc [title PML Reference Manual]
+    [p Author: Christian Neumanns]
+    [p Date: 2021-09-03]
+    [ch [title Introduction]
+        [p This document describes all standard [link url=https://www.pml-lang.dev/ text=PML] nodes. For each type of node, its tag and attributes are listed, and an example demonstrates how to use it.]
+        [p If you have questions or suggestions then please send an email to contact {at} pml-lang {dot} dev.]
     ]
-    [ch (title="Block Nodes")
-        [p A [i block] node represents a section that starts at a given line in the document and ends at a subsequent line.]
-        [p For example, the [c chapter] node is a [i block] node. It starts at a given line of the document, and ends at a subsequent line.]
-        [ch (title="Fundamental Nodes")
-            [ch (title="Document" id="node_doc")
+    [ch [title Block Nodes]
+        [p A [i block] node is a section that starts at a given line in the document and ends at a subsequent line.]
+        [p For example, a [i chapter], a [i paragraph], and a [i list] are all [i block] nodes.]
+        [ch [title Fundamental Nodes]
+            [ch (id="node_doc")[title Document]
 
                 [b Tag:] [c \[doc] .. [c \]]
 
                 [p [b Description]]
-                [p Every PML document must start with a 'document' node. It is the root node of the document.]
+                [p Every PML document must start with a 'doc' node. It is the root node of the document.]
 
                 [p [b Attributes]]
                 [list
-                    [el title=Document Title (default attribute)
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>yes</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A Blissful Experience</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Document Author(s)
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>authors</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A comma-separated list of authors.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>authors = Albert Einstein, Isaac Newton</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Publication Date
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>date</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>The date the document has been published, in ISO format (yyyy-mm-dd).</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>local_date or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>date = 2018-12-01</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Source Code Syntax Highlighter
+                    [el [header Source Code Syntax Highlighter]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>highlighter</td></tr>
@@ -62,19 +30,7 @@
                             </table>
                         html]
                     ]
-                    [el title=Publication Time
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>time</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>The time the document has been published, in ISO format (hh:mm).</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>local_time or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>time = 10:15</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=TOC Position
+                    [el [header TOC Position]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>TOC_position</td></tr>
@@ -86,7 +42,7 @@
                             </table>
                         html]
                     ]
-                    [el title=TOC Title
+                    [el [header TOC Title]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>TOC_title</td></tr>
@@ -107,9 +63,7 @@
                     [el
                         [p PML code:]
                         [code
-[doc title = A Nice Surprise \
-    authors = Giovanni Spiridigliotsky \
-    date = 2018-11-30
+[doc [title A Nice Surprise]
 
     blah blah blah
 ]
@@ -120,11 +74,7 @@
                         [html
 <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
 <article class="pml-doc-text">
-    <div class="pml-doc-title-wrapper">
-        <h1 class="pml-doc-title">A Nice Surprise</h1>
-        <div class="pml-doc-authors">Giovanni Spiridigliotsky</div>
-        <time class="pml-doc-date-time" datetime="2018-11-30">2018-11-30</time>
-    </div>
+    <h1 class="pml-doc-title">A Nice Surprise</h1>
     <p class="pml-paragraph">blah blah blah</p>
 </article>
 
@@ -135,11 +85,7 @@
                         [p HTML code generated:]
                         [code
 <article class="pml-doc-text">
-    <div class="pml-doc-title-wrapper">
-        <h1 class="pml-doc-title">A Nice Surprise</h1>
-        <div class="pml-doc-authors">Giovanni Spiridigliotsky</div>
-        <time class="pml-doc-date-time" datetime="2018-11-30">2018-11-30</time>
-    </div>
+    <h1 class="pml-doc-title">A Nice Surprise</h1>
     <p class="pml-paragraph">blah blah blah</p>
 </article>
 
@@ -147,7 +93,7 @@
                     ]
                 ]
             ]
-            [ch (title="Paragraph" id="node_p")
+            [ch (id="node_p")[title Paragraph]
 
                 [b Tag:] [c \[p] .. [c \]]
 
@@ -156,7 +102,7 @@
 
                 [p [b Attributes]]
                 [list
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -165,18 +111,6 @@
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                             </table>
                         html]
                     ]
@@ -220,7 +154,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                     ]
                 ]
             ]
-            [ch (title="Chapter" id="node_ch")
+            [ch (id="node_ch")[title Chapter]
 
                 [b Tag:] [c \[ch] .. [c \]]
 
@@ -229,17 +163,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
                 [p [b Attributes]]
                 [list
-                    [el title=Chapter Title (default attribute)
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>yes</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = Fundamental Concepts</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -260,11 +184,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                     [el
                         [p PML code:]
                         [code
-[ch title = Introduction id = intro
-    [ch title = What is This About?
+[ch (id=intro) [title Introduction]
+    [ch [title What is This About?]
         blah blah blah
     ]
-    [ch title = Why is This Important?
+    [ch [title Why is This Important?]
         blah blah blah
     ]
 ]
@@ -308,10 +232,69 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                     ]
                 ]
             ]
+            [ch (id="node_title")[title Chapter Title]
+
+                [b Tag:] [c \[title] .. [c \]]
+
+                [p [b Description]]
+                [p A title for a chapter. This node must be the first child-node of a chapter. The text of this node is used in the table of contents.]
+
+                [p [b Attributes]]
+                [list
+                    [el [header Node Identifier]
+                        [html
+                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
+                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
+                            </table>
+                        html]
+                    ]
+                ]
+
+                [p [b HTML attributes]: allowed]
+
+                [p [b Example]]
+                [list
+                    [el
+                        [p PML code:]
+                        [code
+[ch [title What Are [i Your] Advantages?]
+    ...
+]
+                        code]
+                    ]
+                    [el
+                        [p Result:]
+                        [html
+<div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
+<section id="ch__1" class="pml-chapter">
+    <h2 class="pml-chapter-title">What Are <i class="pml-italic">Your</i> Advantages?</h2>
+    <p class="pml-paragraph">...</p>
+</section>
+
+</div>
+                        html]
+                    ]
+                    [el
+                        [p HTML code generated:]
+                        [code
+<section id="ch__1" class="pml-chapter">
+    <h2 class="pml-chapter-title">What Are <i class="pml-italic">Your</i> Advantages?</h2>
+    <p class="pml-paragraph">...</p>
+</section>
+
+                        code]
+                    ]
+                ]
+            ]
         ]
-        [ch (title="Common Nodes")
-            [ch (title="List")
-                [ch (title="List" id="node_list")
+        [ch [title Common Nodes]
+            [ch [title List]
+                [ch (id="node_list")[title List]
 
                     [b Tag:] [c \[list] .. [c \]]
 
@@ -320,7 +303,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
                     [p [b Attributes]]
                     [list
-                        [el title=Node Identifier
+                        [el [header Node Identifier]
                             [html
                                 <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                     <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -329,18 +312,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                                     <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
-                                </table>
-                            html]
-                        ]
-                        [el title=Node Title
-                            [html
-                                <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                    <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                                 </table>
                             html]
                         ]
@@ -360,25 +331,25 @@ Standard list:
 ]
 
 Numbered list:
-[list html_style="list-style-type:decimal"
+[list (html_style="list-style-type:decimal")
     [el item 1]
     [el item 2]
 ]
 
 No markers:
-[list html_style="list-style-type:none"
+[list (html_style="list-style-type:none")
     [el item 1]
     [el item 2]
 ]
 
 Picture for marker
-[list html_style="list-style-image: url('images/gold_star.png')"
+[list (html_style="list-style-image: url('images/gold_star.png')")
     [el item 1]
     [el item 2]
 ]
 
 Text for marker
-[list html_style="list-style-type: '→ → '"
+[list (html_style="list-style-type: '→ → '")
     [el item 1]
     [el item 2]
 ]
@@ -491,7 +462,7 @@ Text for marker
                         ]
                     ]
                 ]
-                [ch (title="List Element" id="node_el")
+                [ch (id="node_el")[title List Element]
 
                     [b Tag:] [c \[el] .. [c \]]
 
@@ -500,7 +471,7 @@ Text for marker
 
                     [p [b Attributes]]
                     [list
-                        [el title=Node Identifier
+                        [el [header Node Identifier]
                             [html
                                 <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                     <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -509,18 +480,6 @@ Text for marker
                                     <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
-                                </table>
-                            html]
-                        ]
-                        [el title=Node Title
-                            [html
-                                <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                    <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                                 </table>
                             html]
                         ]
@@ -533,14 +492,15 @@ Text for marker
                         [el
                             [p PML code:]
                             [code
-[list title=Some planets
-    [el title = Jupiter
+Some planets:
+[list
+    [el [header Jupiter]
         Jupiter is ...
     ]
-    [el title = Uranus
+    [el [header Uranus]
         Uranus is ...
     ]
-    [el title = Neptun
+    [el [header Neptun]
         Neptun is ...
     ]
 ]
@@ -550,18 +510,18 @@ Text for marker
                             [p Result:]
                             [html
 <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
-<p class="pml-node-title">Some planets</p>
+<p class="pml-paragraph">Some planets:</p>
 <ul class="pml-list">
     <li class="pml-list-element">
-        <div class="pml-node-title">Jupiter</div>
+        <div class="pml-header">Jupiter</div>
         <p class="pml-paragraph">Jupiter is ...</p>
     </li>
     <li class="pml-list-element">
-        <div class="pml-node-title">Uranus</div>
+        <div class="pml-header">Uranus</div>
         <p class="pml-paragraph">Uranus is ...</p>
     </li>
     <li class="pml-list-element">
-        <div class="pml-node-title">Neptun</div>
+        <div class="pml-header">Neptun</div>
         <p class="pml-paragraph">Neptun is ...</p>
     </li>
 </ul>
@@ -572,18 +532,18 @@ Text for marker
                         [el
                             [p HTML code generated:]
                             [code
-<p class="pml-node-title">Some planets</p>
+<p class="pml-paragraph">Some planets:</p>
 <ul class="pml-list">
     <li class="pml-list-element">
-        <div class="pml-node-title">Jupiter</div>
+        <div class="pml-header">Jupiter</div>
         <p class="pml-paragraph">Jupiter is ...</p>
     </li>
     <li class="pml-list-element">
-        <div class="pml-node-title">Uranus</div>
+        <div class="pml-header">Uranus</div>
         <p class="pml-paragraph">Uranus is ...</p>
     </li>
     <li class="pml-list-element">
-        <div class="pml-node-title">Neptun</div>
+        <div class="pml-header">Neptun</div>
         <p class="pml-paragraph">Neptun is ...</p>
     </li>
 </ul>
@@ -593,8 +553,8 @@ Text for marker
                     ]
                 ]
             ]
-            [ch (title="Table")
-                [ch (title="Table Data" id="node_table_data")
+            [ch [title Table]
+                [ch (id="node_table_data")[title Table Data]
 
                     [b Tag:] [c \[table_data] .. [c table_data\]]
 
@@ -603,7 +563,7 @@ Text for marker
 
                     [p [b Attributes]]
                     [list
-                        [el title=Horizontal Alignments for Columns
+                        [el [header Horizontal Alignments for Columns]
                             [html
                                 <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                     <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>halign</td></tr>
@@ -615,7 +575,7 @@ Text for marker
                                 </table>
                             html]
                         ]
-                        [el title=Node Identifier
+                        [el [header Node Identifier]
                             [html
                                 <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                     <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -624,18 +584,6 @@ Text for marker
                                     <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
-                                </table>
-                            html]
-                        ]
-                        [el title=Node Title
-                            [html
-                                <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                    <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                                 </table>
                             html]
                         ]
@@ -649,13 +597,14 @@ Text for marker
                             [p PML code:]
                             [code
 Simple table:
-
 [table_data
     cell 1.1, cell 1.2
     cell 2.1, cell 2.2
 table_data]
 
-[table_data halign="C,L,R" title="Table with header, footer, and column alignments"
+Table with header, footer, and column alignments:
+
+[table_data (halign="C,L,R")
     Position, Product, Price
     -
     1, Organic food, 12.50
@@ -677,7 +626,7 @@ table_data]
         <tr><td class="pml-table-body-cell">cell 2.1</td><td class="pml-table-body-cell">cell 2.2</td></tr>
     </tbody>
 </table>
-<p class="pml-node-title">Table with header, footer, and column alignments</p>
+<p class="pml-paragraph">Table with header, footer, and column alignments:</p>
 <table class="pml-table">
     <thead class="pml-table-header">
         <tr><th class="pml-table-header-cell">Position</th><th class="pml-table-header-cell">Product</th><th class="pml-table-header-cell">Price</th></tr>
@@ -704,7 +653,7 @@ table_data]
         <tr><td class="pml-table-body-cell">cell 2.1</td><td class="pml-table-body-cell">cell 2.2</td></tr>
     </tbody>
 </table>
-<p class="pml-node-title">Table with header, footer, and column alignments</p>
+<p class="pml-paragraph">Table with header, footer, and column alignments:</p>
 <table class="pml-table">
     <thead class="pml-table-header">
         <tr><th class="pml-table-header-cell">Position</th><th class="pml-table-header-cell">Product</th><th class="pml-table-header-cell">Price</th></tr>
@@ -722,7 +671,7 @@ table_data]
                         ]
                     ]
                 ]
-                [ch (title="Table" id="node_table")
+                [ch (id="node_table")[title Table]
 
                     [b Tag:] [c \[table] .. [c \]]
 
@@ -731,7 +680,7 @@ table_data]
 
                     [p [b Attributes]]
                     [list
-                        [el title=Node Caption
+                        [el [header Node Caption]
                             [html
                                 <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                     <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>caption</td></tr>
@@ -743,7 +692,7 @@ table_data]
                                 </table>
                             html]
                         ]
-                        [el title=Node Identifier
+                        [el [header Node Identifier]
                             [html
                                 <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                     <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -752,18 +701,6 @@ table_data]
                                     <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
                                     <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
-                                </table>
-                            html]
-                        ]
-                        [el title=Node Title
-                            [html
-                                <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                    <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                    <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                                 </table>
                             html]
                         ]
@@ -789,10 +726,10 @@ Table with header and footer:
     [theader
         [tr [tc Pos.] [tc Group] [tc Total invoiced]]
     ]
-    [tr [tc 1] [tc [i Organic] food] [tc html_style="text-align:right;" 12,000.22]]
-    [tr [tc 2] [tc Meditation lessons] [tc html_style="text-align:right;" 21,350.00]]
+    [tr [tc 1] [tc [i Organic] food] [tc (html_style="text-align:right;") 12,000.22]]
+    [tr [tc 2] [tc Meditation lessons] [tc (html_style="text-align:right;") 21,350.00]]
     [tfooter
-        [tr [tc] [tc html_style="text-align:right;" Sum:] [tc html_style="text-align:right;" 33,350.22]]
+        [tr [tc] [tc (html_style="text-align:right;") Sum:] [tc (html_style="text-align:right;") 33,350.22]]
     ]
 ]
                             code]
@@ -951,7 +888,7 @@ Table with header and footer:
                         ]
                     ]
                 ]
-                [ch (title="Table Header" id="node_theader")
+                [ch (id="node_theader")[title Table Header]
 
                     [b Tag:] [c \[theader] .. [c \]]
 
@@ -959,7 +896,20 @@ Table with header and footer:
                     [p A header in a table.]
 
                     [p [b Attributes]]
-                    [p This node doesn't have attributes.]
+                    [list
+                        [el [header Node Identifier]
+                            [html
+                                <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
+                                    <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
+                                </table>
+                            html]
+                        ]
+                    ]
 
                     [p [b HTML attributes]: allowed]
 
@@ -1071,7 +1021,7 @@ Table with header:
                         ]
                     ]
                 ]
-                [ch (title="Table Footer" id="node_tfooter")
+                [ch (id="node_tfooter")[title Table Footer]
 
                     [b Tag:] [c \[tfooter] .. [c \]]
 
@@ -1079,7 +1029,20 @@ Table with header:
                     [p A footer in a table.]
 
                     [p [b Attributes]]
-                    [p This node doesn't have attributes.]
+                    [list
+                        [el [header Node Identifier]
+                            [html
+                                <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
+                                    <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
+                                </table>
+                            html]
+                        ]
+                    ]
 
                     [p [b HTML attributes]: allowed]
 
@@ -1191,7 +1154,7 @@ Table with footer:
                         ]
                     ]
                 ]
-                [ch (title="Table Row" id="node_tr")
+                [ch (id="node_tr")[title Table Row]
 
                     [b Tag:] [c \[tr] .. [c \]]
 
@@ -1199,7 +1162,20 @@ Table with footer:
                     [p A row in a table.]
 
                     [p [b Attributes]]
-                    [p This node doesn't have attributes.]
+                    [list
+                        [el [header Node Identifier]
+                            [html
+                                <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
+                                    <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
+                                </table>
+                            html]
+                        ]
+                    ]
 
                     [p [b HTML attributes]: allowed]
 
@@ -1282,7 +1258,7 @@ Table with 2 rows:
                         ]
                     ]
                 ]
-                [ch (title="Table Cell" id="node_tc")
+                [ch (id="node_tc")[title Table Cell]
 
                     [b Tag:] [c \[tc] .. [c \]]
 
@@ -1290,7 +1266,20 @@ Table with 2 rows:
                     [p A cell in a table row.]
 
                     [p [b Attributes]]
-                    [p This node doesn't have attributes.]
+                    [list
+                        [el [header Node Identifier]
+                            [html
+                                <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
+                                    <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
+                                    <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
+                                </table>
+                            html]
+                        ]
+                    ]
 
                     [p [b HTML attributes]: allowed]
 
@@ -1374,7 +1363,7 @@ Table with 2 rows and 3 columns:
                     ]
                 ]
             ]
-            [ch (title="Admonition" id="node_admon")
+            [ch (id="node_admon")[title Admonition]
 
                 [b Tag:] [c \[admon] .. [c \]]
 
@@ -1383,7 +1372,7 @@ Table with 2 rows and 3 columns:
 
                 [p [b Attributes]]
                 [list
-                    [el title=Label
+                    [el [header Label]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>label</td></tr>
@@ -1394,7 +1383,7 @@ Table with 2 rows and 3 columns:
                             </table>
                         html]
                     ]
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -1403,18 +1392,6 @@ Table with 2 rows and 3 columns:
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                             </table>
                         html]
                     ]
@@ -1427,7 +1404,7 @@ Table with 2 rows and 3 columns:
                     [el
                         [p PML code:]
                         [code
-[admon label=Note
+[admon (label=Tip)
     We will have a look at some [i striking] examples later in the book.
 ]
                         code]
@@ -1437,7 +1414,7 @@ Table with 2 rows and 3 columns:
                         [html
 <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
 <div class="pml-admonition">
-    <div class="pml-admonition-label">Note</div>
+    <div class="pml-admonition-label">Tip</div>
     <div class="pml-admonition-content">
         <p class="pml-paragraph">We will have a look at some <i class="pml-italic">striking</i> examples later in the book.</p>
     </div>
@@ -1450,7 +1427,7 @@ Table with 2 rows and 3 columns:
                         [p HTML code generated:]
                         [code
 <div class="pml-admonition">
-    <div class="pml-admonition-label">Note</div>
+    <div class="pml-admonition-label">Tip</div>
     <div class="pml-admonition-content">
         <p class="pml-paragraph">We will have a look at some <i class="pml-italic">striking</i> examples later in the book.</p>
     </div>
@@ -1460,7 +1437,7 @@ Table with 2 rows and 3 columns:
                     ]
                 ]
             ]
-            [ch (title="Note" id="node_note")
+            [ch (id="node_note")[title Note]
 
                 [b Tag:] [c \[note] .. [c \]]
 
@@ -1469,7 +1446,7 @@ Table with 2 rows and 3 columns:
 
                 [p [b Attributes]]
                 [list
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -1478,18 +1455,6 @@ Table with 2 rows and 3 columns:
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                             </table>
                         html]
                     ]
@@ -1533,7 +1498,7 @@ Table with 2 rows and 3 columns:
                     ]
                 ]
             ]
-            [ch (title="Quote" id="node_quote")
+            [ch (id="node_quote")[title Quote]
 
                 [b Tag:] [c \[quote] .. [c \]]
 
@@ -1542,7 +1507,7 @@ Table with 2 rows and 3 columns:
 
                 [p [b Attributes]]
                 [list
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -1554,7 +1519,7 @@ Table with 2 rows and 3 columns:
                             </table>
                         html]
                     ]
-                    [el title=Source of Quote
+                    [el [header Source of Quote]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>source</td></tr>
@@ -1563,18 +1528,6 @@ Table with 2 rows and 3 columns:
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>source = Dalai Lama</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                             </table>
                         html]
                     ]
@@ -1587,7 +1540,7 @@ Table with 2 rows and 3 columns:
                     [el
                         [p PML code:]
                         [code
-[quote source=Albert Einstein, physicist
+[quote (source="Albert Einstein, physicist")
     Everything should be as simple as possible, but not simpler.
 ]
                         code]
@@ -1628,17 +1581,30 @@ Table with 2 rows and 3 columns:
                     ]
                 ]
             ]
-            [ch (title="Caption" id="node_caption")
+            [ch (id="node_caption")[title Caption]
 
                 [b Tag:] [c \[caption] .. [c \]]
 
                 [p [b Description]]
-                [p A small title that is not part of he table of contents.]
+                [p A small title that is not part of the table of contents, typically displayed below a block element (image, video, table, etc.).]
 
                 [p [b Attributes]]
-                [p This node doesn't have attributes.]
+                [list
+                    [el [header Node Identifier]
+                        [html
+                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
+                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node. The id can be used for cross-referencing, or for local links in the resulting HTML code.<br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
+                            </table>
+                        html]
+                    ]
+                ]
 
-                [p [b HTML attributes]: not allowed]
+                [p [b HTML attributes]: allowed]
 
                 [p [b Example]]
                 [list
@@ -1666,7 +1632,7 @@ Table with 2 rows and 3 columns:
                     ]
                 ]
             ]
-            [ch (title="Monospace" id="node_monospace")
+            [ch (id="node_monospace")[title Monospace]
 
                 [b Tag:] [c \[monospace] .. [c \]]
 
@@ -1675,7 +1641,7 @@ Table with 2 rows and 3 columns:
 
                 [p [b Attributes]]
                 [list
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -1684,18 +1650,6 @@ Table with 2 rows and 3 columns:
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                             </table>
                         html]
                     ]
@@ -1708,7 +1662,8 @@ Table with 2 rows and 3 columns:
                     [el
                         [p PML code:]
                         [code
-[monospace title = "A Pascal Triangle"
+[header A Pascal Triangle]
+[monospace
       1
     1   1
   1   2   1
@@ -1720,7 +1675,7 @@ Table with 2 rows and 3 columns:
                         [p Result:]
                         [html
 <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
-<p class="pml-node-title">A Pascal Triangle</p>
+<div class="pml-header">A Pascal Triangle</div>
 <pre class="pml-monospace">
       1
     1   1
@@ -1734,7 +1689,7 @@ Table with 2 rows and 3 columns:
                     [el
                         [p HTML code generated:]
                         [code
-<p class="pml-node-title">A Pascal Triangle</p>
+<div class="pml-header">A Pascal Triangle</div>
 <pre class="pml-monospace">
       1
     1   1
@@ -1746,7 +1701,7 @@ Table with 2 rows and 3 columns:
                     ]
                 ]
             ]
-            [ch (title="Division" id="node_div")
+            [ch (id="node_div")[title Division]
 
                 [b Tag:] [c \[div] .. [c \]]
 
@@ -1755,7 +1710,7 @@ Table with 2 rows and 3 columns:
 
                 [p [b Attributes]]
                 [list
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -1764,18 +1719,6 @@ Table with 2 rows and 3 columns:
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                             </table>
                         html]
                     ]
@@ -1788,7 +1731,7 @@ Table with 2 rows and 3 columns:
                     [el
                         [p PML code:]
                         [code
-[div html_class=syntax-block
+[div (html_class=syntax-block)
     text text text
 ]
                         code]
@@ -1815,7 +1758,7 @@ Table with 2 rows and 3 columns:
                     ]
                 ]
             ]
-            [ch (title="HTML Code" id="node_html")
+            [ch (id="node_html")[title HTML Code]
 
                 [b Tag:] [c \[html] .. [c html\]]
 
@@ -1824,7 +1767,7 @@ Table with 2 rows and 3 columns:
 
                 [p [b Attributes]]
                 [list
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -1833,18 +1776,6 @@ Table with 2 rows and 3 columns:
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                             </table>
                         html]
                     ]
@@ -1866,25 +1797,21 @@ html]
                         [p Result:]
                         [html
 <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
-
-    <p>This is pure <b>HTML</b> code.</p>
-
+<p>This is pure <b>HTML</b> code.</p>
 </div>
                         html]
                     ]
                     [el
                         [p HTML code generated:]
                         [code
-
-    <p>This is pure <b>HTML</b> code.</p>
-
+<p>This is pure <b>HTML</b> code.</p>
                         code]
                     ]
                 ]
             ]
         ]
-        [ch (title="Media")
-            [ch (title="Image" id="node_image")
+        [ch [title Media]
+            [ch (id="node_image")[title Image]
 
                 [b Tag:] [c \[image] .. [c \]]
 
@@ -1893,18 +1820,18 @@ html]
 
                 [p [b Attributes]]
                 [list
-                    [el title=Image Source (default attribute)
+                    [el [header Image Source] (default attribute)
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>source</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>The relative file path to the image file. The path is relative to the target HTML file.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>The relative file path to the image file. The path is relative to the 'resources_directory' command line argument (default is subdirectory 'resources' in the working directory).</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>relative_file_path</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>yes</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>source = images/ball.png</td></tr>
                             </table>
                         html]
                     ]
-                    [el title=Horizontal Alignment
+                    [el [header Horizontal Alignment]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>align</td></tr>
@@ -1916,7 +1843,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Border
+                    [el [header Border]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>border</td></tr>
@@ -1928,7 +1855,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Node Caption
+                    [el [header Node Caption]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>caption</td></tr>
@@ -1940,7 +1867,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Image Height
+                    [el [header Image Height]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>height</td></tr>
@@ -1952,7 +1879,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -1964,7 +1891,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=URL link
+                    [el [header URL link]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>link</td></tr>
@@ -1976,19 +1903,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Image Width
+                    [el [header Image Width]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>width</td></tr>
@@ -2009,18 +1924,18 @@ html]
                     [el
                         [p PML code:]
                         [code
-[image source = images/strawberries.jpg \
-    title = Strawberries (Photo by Jacek Dylag on Unsplash) \
-    link = https://unsplash.com/photos/kH3Sr9K8EBA \
-    html_alt = Delicious strawberries]
+[header Strawberries (Photo by Jacek Dylag on Unsplash)]
+[image ( source = images/strawberries.jpg
+    link = https://unsplash.com/photos/kH3Sr9K8EBA
+    html_alt = "Delicious strawberries" ) ]
                         code]
                     ]
                     [el
                         [p Result:]
                         [html
 <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
+<div class="pml-header">Strawberries (Photo by Jacek Dylag on Unsplash)</div>
 <figure style="text-align: left">
-    <p class="pml-node-title">Strawberries (Photo by Jacek Dylag on Unsplash)</p>
     <a href="https://unsplash.com/photos/kH3Sr9K8EBA">
         <img alt="Delicious strawberries" class="pml-image" src="images/strawberries.jpg" />
     </a>
@@ -2032,8 +1947,8 @@ html]
                     [el
                         [p HTML code generated:]
                         [code
+<div class="pml-header">Strawberries (Photo by Jacek Dylag on Unsplash)</div>
 <figure style="text-align: left">
-    <p class="pml-node-title">Strawberries (Photo by Jacek Dylag on Unsplash)</p>
     <a href="https://unsplash.com/photos/kH3Sr9K8EBA">
         <img alt="Delicious strawberries" class="pml-image" src="images/strawberries.jpg" />
     </a>
@@ -2043,7 +1958,7 @@ html]
                     ]
                 ]
             ]
-            [ch (title="Audio (Sound)" id="node_audio")
+            [ch (id="node_audio")[title Audio (Sound)]
 
                 [b Tag:] [c \[audio] .. [c \]]
 
@@ -2052,18 +1967,18 @@ html]
 
                 [p [b Attributes]]
                 [list
-                    [el title=Audio Source
+                    [el [header Audio Source]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>source</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>The relative file path to the audio file. The path is relative to the target HTML file.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>The relative file path to the audio file. The path is relative to the 'resources_directory' command line argument (default is subdirectory 'resources' in the working directory).</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>relative_file_path</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>yes</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>source = audios/violin.mp3</td></tr>
                             </table>
                         html]
                     ]
-                    [el title=Node Caption
+                    [el [header Node Caption]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>caption</td></tr>
@@ -2075,7 +1990,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -2084,18 +1999,6 @@ html]
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                             </table>
                         html]
                     ]
@@ -2108,14 +2011,15 @@ html]
                     [el
                         [p PML code:]
                         [code
-[audio title="Bird talk" source=audios/bird_talk.mp3]
+[header Bird talk]
+[audio source=audios/bird_talk.mp3]
                         code]
                     ]
                     [el
                         [p Result:]
                         [html
 <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
-<p class="pml-node-title">Bird talk</p>
+<div class="pml-header">Bird talk</div>
 <audio class="pml-audio" controls="controls">
     <source src="audios/bird_talk.mp3">
     Your browser does not support the audio element.
@@ -2127,7 +2031,7 @@ html]
                     [el
                         [p HTML code generated:]
                         [code
-<p class="pml-node-title">Bird talk</p>
+<div class="pml-header">Bird talk</div>
 <audio class="pml-audio" controls="controls">
     <source src="audios/bird_talk.mp3">
     Your browser does not support the audio element.
@@ -2137,7 +2041,7 @@ html]
                     ]
                 ]
             ]
-            [ch (title="Video" id="node_video")
+            [ch (id="node_video")[title Video]
 
                 [b Tag:] [c \[video] .. [c \]]
 
@@ -2146,18 +2050,18 @@ html]
 
                 [p [b Attributes]]
                 [list
-                    [el title=Video Source
+                    [el [header Video Source]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>source</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>The relative file path to the video file. The path is relative to the target HTML file.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>The relative file path to the video file. The path is relative to the target HTML file. The path is relative to the 'resources_directory' command line argument (default is subdirectory 'resources' in the working directory).</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>relative_file_path</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>yes</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>source = videos/happy_kids.mp4</td></tr>
                             </table>
                         html]
                     ]
-                    [el title=Node Caption
+                    [el [header Node Caption]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>caption</td></tr>
@@ -2169,7 +2073,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Video Height
+                    [el [header Video Height]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>height</td></tr>
@@ -2181,7 +2085,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -2193,19 +2097,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Video Width
+                    [el [header Video Width]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>width</td></tr>
@@ -2226,14 +2118,15 @@ html]
                     [el
                         [p PML code:]
                         [code
-[video source = videos/red_flower.mp4 title = Beautiful Nature]
+[header Beautiful Nature]
+[video source = videos/red_flower.mp4]
                         code]
                     ]
                     [el
                         [p Result:]
                         [html
 <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
-<p class="pml-node-title">Beautiful Nature</p>
+<div class="pml-header">Beautiful Nature</div>
 <video controls="controls" class="pml-video">
     <source src="videos/red_flower.mp4">
     Your browser does not support the video element.
@@ -2245,7 +2138,7 @@ html]
                     [el
                         [p HTML code generated:]
                         [code
-<p class="pml-node-title">Beautiful Nature</p>
+<div class="pml-header">Beautiful Nature</div>
 <video controls="controls" class="pml-video">
     <source src="videos/red_flower.mp4">
     Your browser does not support the video element.
@@ -2255,7 +2148,7 @@ html]
                     ]
                 ]
             ]
-            [ch (title="Embedded Youtube Video" id="node_youtube_video")
+            [ch (id="node_youtube_video")[title Embedded Youtube Video]
 
                 [b Tag:] [c \[youtube_video] .. [c \]]
 
@@ -2264,7 +2157,7 @@ html]
 
                 [p [b Attributes]]
                 [list
-                    [el title=Youtube Video Id
+                    [el [header Youtube Video Id]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>yid</td></tr>
@@ -2275,7 +2168,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Node Caption
+                    [el [header Node Caption]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>caption</td></tr>
@@ -2287,7 +2180,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Video Height
+                    [el [header Video Height]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>height</td></tr>
@@ -2299,7 +2192,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -2311,19 +2204,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Video Width
+                    [el [header Video Width]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>width</td></tr>
@@ -2344,17 +2225,18 @@ html]
                     [el
                         [p PML code:]
                         [code
-[youtube_video yid = qrcZqnICYbs \
-    title = Hellzapoppin 1941 - Enjoy! \
-    width = 600 \
-    height = 400]
+[header Hellzapoppin 1941 - [i Enjoy!]]
+[youtube_video (
+    yid = qrcZqnICYbs
+    width = 600
+    height = 400 ) ]
                         code]
                     ]
                     [el
                         [p Result:]
                         [html
 <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
-<p class="pml-node-title">Hellzapoppin 1941 - Enjoy!</p>
+<div class="pml-header">Hellzapoppin 1941 - <i class="pml-italic">Enjoy!</i></div>
 <div>
     <iframe width="600" height="400" src="https://www.youtube.com/embed/qrcZqnICYbs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="pml-youtube-video"></iframe>
 </div>
@@ -2365,7 +2247,7 @@ html]
                     [el
                         [p HTML code generated:]
                         [code
-<p class="pml-node-title">Hellzapoppin 1941 - Enjoy!</p>
+<div class="pml-header">Hellzapoppin 1941 - <i class="pml-italic">Enjoy!</i></div>
 <div>
     <iframe width="600" height="400" src="https://www.youtube.com/embed/qrcZqnICYbs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="pml-youtube-video"></iframe>
 </div>
@@ -2375,8 +2257,8 @@ html]
                 ]
             ]
         ]
-        [ch (title="Software Development ")
-            [ch (title="Source Code" id="node_code")
+        [ch [title Software Development ]
+            [ch (id="node_code")[title Source Code]
 
                 [b Tag:] [c \[code] .. [c code\]]
 
@@ -2385,7 +2267,7 @@ html]
 
                 [p [b Attributes]]
                 [list
-                    [el title=Use Source Code Syntax Highlighter
+                    [el [header Use Source Code Syntax Highlighter]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>highlight</td></tr>
@@ -2397,7 +2279,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -2409,7 +2291,7 @@ html]
                             </table>
                         html]
                     ]
-                    [el title=Language
+                    [el [header Language]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>lang</td></tr>
@@ -2418,18 +2300,6 @@ html]
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>auto</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>lang = java</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                             </table>
                         html]
                     ]
@@ -2470,7 +2340,7 @@ j = 1;</code></pre>
                     ]
                 ]
             ]
-            [ch (title="Insert Source Code" id="node_insert_code")
+            [ch (id="node_insert_code")[title Insert Source Code]
 
                 [b Tag:] [c \[insert_code] .. [c \]]
 
@@ -2479,7 +2349,7 @@ j = 1;</code></pre>
 
                 [p [b Attributes]]
                 [list
-                    [el title=File
+                    [el [header File]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>file</td></tr>
@@ -2490,7 +2360,7 @@ j = 1;</code></pre>
                             </table>
                         html]
                     ]
-                    [el title=Insert From Regex
+                    [el [header Insert From Regex]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>from_regex</td></tr>
@@ -2502,7 +2372,7 @@ j = 1;</code></pre>
                             </table>
                         html]
                     ]
-                    [el title=Use Source Code Syntax Highlighter
+                    [el [header Use Source Code Syntax Highlighter]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>highlight</td></tr>
@@ -2514,7 +2384,7 @@ j = 1;</code></pre>
                             </table>
                         html]
                     ]
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -2526,7 +2396,7 @@ j = 1;</code></pre>
                             </table>
                         html]
                     ]
-                    [el title=Include From Regex
+                    [el [header Include From Regex]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>include_from_regex</td></tr>
@@ -2538,7 +2408,7 @@ j = 1;</code></pre>
                             </table>
                         html]
                     ]
-                    [el title=Include To Regex
+                    [el [header Include To Regex]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>include_to_regex</td></tr>
@@ -2550,7 +2420,7 @@ j = 1;</code></pre>
                             </table>
                         html]
                     ]
-                    [el title=Language
+                    [el [header Language]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>lang</td></tr>
@@ -2562,19 +2432,7 @@ j = 1;</code></pre>
                             </table>
                         html]
                     ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Insert To Regex
+                    [el [header Insert To Regex]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>to_regex</td></tr>
@@ -2628,7 +2486,7 @@ function start
                     ]
                 ]
             ]
-            [ch (title="Input" id="node_input")
+            [ch (id="node_input")[title Input]
 
                 [b Tag:] [c \[input] .. [c input\]]
 
@@ -2637,7 +2495,7 @@ function start
 
                 [p [b Attributes]]
                 [list
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -2646,18 +2504,6 @@ function start
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                             </table>
                         html]
                     ]
@@ -2693,7 +2539,7 @@ input]
                     ]
                 ]
             ]
-            [ch (title="Output" id="node_output")
+            [ch (id="node_output")[title Output]
 
                 [b Tag:] [c \[output] .. [c output\]]
 
@@ -2702,7 +2548,7 @@ input]
 
                 [p [b Attributes]]
                 [list
-                    [el title=Node Identifier
+                    [el [header Node Identifier]
                         [html
                             <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                                 <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
@@ -2711,18 +2557,6 @@ input]
                                 <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
                                 <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
-                            </table>
-                        html]
-                    ]
-                    [el title=Node Title
-                        [html
-                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>title</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>An optional small title, typically displayed above the node.</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
-                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>title = A beautiful idea</td></tr>
                             </table>
                         html]
                     ]
@@ -2763,11 +2597,11 @@ The new database has been created successfully.</pre>
             ]
         ]
     ]
-    [ch (title="Inline Nodes")
+    [ch [title Inline Nodes]
         [p An [i inline] node represents a part of a paragraph (a block of text). It starts at some character position in the paragraph, and ends at a subsequent position.]
         [p For example, the [c italic] node is an [i inline] node. All text contained in it is written in [i italics].]
-        [ch (title="Font")
-            [ch (title="Bold Text" id="node_b")
+        [ch [title Font]
+            [ch (id="node_b")[title Bold Text]
 
                 [b Tag:] [c \[b] .. [c \]]
 
@@ -2802,7 +2636,7 @@ This is a [b huge] advantage.
                     ]
                 ]
             ]
-            [ch (title="Italic Text" id="node_i")
+            [ch (id="node_i")[title Italic Text]
 
                 [b Tag:] [c \[i] .. [c \]]
 
@@ -2841,7 +2675,7 @@ This is a [b [i very] important] point.
                     ]
                 ]
             ]
-            [ch (title="Subscript Text" id="node_sub")
+            [ch (id="node_sub")[title Subscript Text]
 
                 [b Tag:] [c \[sub] .. [c \]]
 
@@ -2859,6 +2693,7 @@ This is a [b [i very] important] point.
                         [p PML code:]
                         [code
 Water: H[sub 2]O
+
 This is [sub subscript], and this is [sup superscript]
                         code]
                     ]
@@ -2866,7 +2701,8 @@ This is [sub subscript], and this is [sup superscript]
                         [p Result:]
                         [html
 <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
-<p class="pml-paragraph">Water: H<sub class="pml-subscript">2</sub>O This is <sub class="pml-subscript">subscript</sub>, and this is <sup class="pml-superscript">superscript</sup></p>
+<p class="pml-paragraph">Water: H<sub class="pml-subscript">2</sub>O</p>
+<p class="pml-paragraph">This is <sub class="pml-subscript">subscript</sub>, and this is <sup class="pml-superscript">superscript</sup></p>
 
 </div>
                         html]
@@ -2874,13 +2710,14 @@ This is [sub subscript], and this is [sup superscript]
                     [el
                         [p HTML code generated:]
                         [code
-<p class="pml-paragraph">Water: H<sub class="pml-subscript">2</sub>O This is <sub class="pml-subscript">subscript</sub>, and this is <sup class="pml-superscript">superscript</sup></p>
+<p class="pml-paragraph">Water: H<sub class="pml-subscript">2</sub>O</p>
+<p class="pml-paragraph">This is <sub class="pml-subscript">subscript</sub>, and this is <sup class="pml-superscript">superscript</sup></p>
 
                         code]
                     ]
                 ]
             ]
-            [ch (title="Superscript Text" id="node_sup")
+            [ch (id="node_sup")[title Superscript Text]
 
                 [b Tag:] [c \[sup] .. [c \]]
 
@@ -2898,6 +2735,7 @@ This is [sub subscript], and this is [sup superscript]
                         [p PML code:]
                         [code
 2[sup 4] = 16
+
 This is [sup superscript], and this is [sub subscript]
                         code]
                     ]
@@ -2905,7 +2743,8 @@ This is [sup superscript], and this is [sub subscript]
                         [p Result:]
                         [html
 <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
-<p class="pml-paragraph">2<sup class="pml-superscript">4</sup> = 16 This is <sup class="pml-superscript">superscript</sup>, and this is <sub class="pml-subscript">subscript</sub></p>
+<p class="pml-paragraph">2<sup class="pml-superscript">4</sup> = 16</p>
+<p class="pml-paragraph">This is <sup class="pml-superscript">superscript</sup>, and this is <sub class="pml-subscript">subscript</sub></p>
 
 </div>
                         html]
@@ -2913,13 +2752,14 @@ This is [sup superscript], and this is [sub subscript]
                     [el
                         [p HTML code generated:]
                         [code
-<p class="pml-paragraph">2<sup class="pml-superscript">4</sup> = 16 This is <sup class="pml-superscript">superscript</sup>, and this is <sub class="pml-subscript">subscript</sub></p>
+<p class="pml-paragraph">2<sup class="pml-superscript">4</sup> = 16</p>
+<p class="pml-paragraph">This is <sup class="pml-superscript">superscript</sup>, and this is <sub class="pml-subscript">subscript</sub></p>
 
                         code]
                     ]
                 ]
             ]
-            [ch (title="Strikethrough Text" id="node_strike")
+            [ch (id="node_strike")[title Strikethrough Text]
 
                 [b Tag:] [c \[strike] .. [c \]]
 
@@ -2961,7 +2801,7 @@ SOLD OUT!
                     ]
                 ]
             ]
-            [ch (title="Inline Source Code" id="node_c")
+            [ch (id="node_c")[title Inline Source Code]
 
                 [b Tag:] [c \[c] .. [c \]]
 
@@ -3000,7 +2840,7 @@ The assignment [c pi = 3.1415] means we are using [i four] decimals for [c pi].
                 ]
             ]
         ]
-        [ch (title="URL Link" id="node_link")
+        [ch (id="node_link")[title URL Link]
 
             [b Tag:] [c \[link] .. [c \]]
 
@@ -3009,7 +2849,7 @@ The assignment [c pi = 3.1415] means we are using [i four] decimals for [c pi].
 
             [p [b Attributes]]
             [list
-                [el title=URL
+                [el [header URL]
                     [html
                         <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                             <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>url</td></tr>
@@ -3020,7 +2860,7 @@ The assignment [c pi = 3.1415] means we are using [i four] decimals for [c pi].
                         </table>
                     html]
                 ]
-                [el title=URL text
+                [el [header URL text]
                     [html
                         <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                             <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>text</td></tr>
@@ -3041,7 +2881,7 @@ The assignment [c pi = 3.1415] means we are using [i four] decimals for [c pi].
                 [el
                     [p PML code:]
                     [code
-Please have a look at [link url=http://www.example.com/articles/123 text=this article] for more information.
+Please have a look at [link url=http://www.example.com/articles/123 text="this article"] for more information.
                     code]
                 ]
                 [el
@@ -3062,7 +2902,7 @@ Please have a look at [link url=http://www.example.com/articles/123 text=this ar
                 ]
             ]
         ]
-        [ch (title="Verbatim Text" id="node_verbatim")
+        [ch (id="node_verbatim")[title Verbatim Text]
 
             [b Tag:] [c \[verbatim] .. [c \]]
 
@@ -3097,7 +2937,7 @@ Math's ring operator is [verbatim &#x2218;].
                 ]
             ]
         ]
-        [ch (title="Cross-Reference" id="node_xref")
+        [ch (id="node_xref")[title Cross-Reference]
 
             [b Tag:] [c \[xref] .. [c \]]
 
@@ -3106,7 +2946,7 @@ Math's ring operator is [verbatim &#x2218;].
 
             [p [b Attributes]]
             [list
-                [el title=Node Id
+                [el [header Node Id]
                     [html
                         <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                             <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>node_id</td></tr>
@@ -3117,11 +2957,11 @@ Math's ring operator is [verbatim &#x2218;].
                         </table>
                     html]
                 ]
-                [el title=Text
+                [el [header Text]
                     [html
                         <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
                             <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>text</td></tr>
-                            <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>The text to be displayed for the cross-reference. If this attribute is omitted, then the title of the target node is displayed. If the target node doesn't have a title, then the target node's identifier is displayed instead.</td></tr>
+                            <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>The text to be displayed for the cross-reference.<br />If this attribute is omitted, then the title of the target node is displayed. If the target node doesn't have a title, then the target node's identifier is displayed instead.</td></tr>
                             <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
                             <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
                             <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
@@ -3138,11 +2978,11 @@ Math's ring operator is [verbatim &#x2218;].
                 [el
                     [p PML code:]
                     [code
-[ch title=A Beautiful Solution id=solution
+[ch (id=solution) [title A Beautiful Solution]
     text text text
 ]
 
-[ch title = Conclusion
+[ch [title Conclusion]
     As we saw in chapter [xref node_id=solution], it is ...
 ]
                     code]
@@ -3179,7 +3019,7 @@ Math's ring operator is [verbatim &#x2218;].
                 ]
             ]
         ]
-        [ch (title="Span" id="node_span")
+        [ch (id="node_span")[title Span]
 
             [b Tag:] [c \[span] .. [c \]]
 
@@ -3196,7 +3036,7 @@ Math's ring operator is [verbatim &#x2218;].
                 [el
                     [p PML code:]
                     [code
-This is a [span html_style="color:red;background-color:yellow" huge] advantage.
+This is a [span (html_style="color:red;background-color:yellow") huge] advantage.
                     code]
                 ]
                 [el
@@ -3217,7 +3057,7 @@ This is a [span html_style="color:red;background-color:yellow" huge] advantage.
                 ]
             ]
         ]
-        [ch (title="New Line" id="node_nl")
+        [ch (id="node_nl")[title New Line]
 
             [b Tag:] [c \[nl] .. [c \]]
 
@@ -3255,7 +3095,7 @@ Line 1[nl][nl]Line 2
                 ]
             ]
         ]
-        [ch (title="Space Character" id="node_sp")
+        [ch (id="node_sp")[title Space Character]
 
             [b Tag:] [c \[sp] .. [c \]]
 
@@ -3296,108 +3136,6 @@ This is [sp]g[sp][sp]o[sp][sp]o[sp][sp]d[sp]!
                     code]
                 ]
             ]
-        ]
-    ]
-    [ch (title="Text Processing Nodes")
-        [ch (title="Comment")
-            [p A comment starts with [c \[-] and ends with [c -\]]. Comments can appear anywhere and they can be nested to any level. Text within comments is ignored.]
-
-            [p [b Example]]
-            [list
-                [el
-                    [p PML code:]
-                    [code
-This is [- good -] awesome.
-[- TODO: explain why -]
-
-Text
-[-
-    This [i bad] text not show.
-    [- a
-        nested
-        comment -]
--]
-
-More text
-                    code]
-                ]
-                [el
-                    [p Result:]
-                    [html
-<div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
-<p class="pml-paragraph">This is  awesome.</p>
-<p class="pml-paragraph">Text</p>
-<p class="pml-paragraph">More text</p>
-
-</div>
-                    html]
-                ]
-                [el
-                    [p HTML code generated:]
-                    [code
-<p class="pml-paragraph">This is  awesome.</p>
-<p class="pml-paragraph">Text</p>
-<p class="pml-paragraph">More text</p>
-
-                    code]
-                ]
-            ]
-        ]
-        [ch (title="Insert File" id="node_insert")
-
-            [b Tag:] [c \[insert] .. [c \]]
-
-            [p [b Description]]
-            [p Insert a .pml file in the current document. The text contained in the file is inserted at the position of the 'insert' node. This is useful to split a big document into several files (e.g. each chapter is contained in a different file), or to re-use text snippets that appear in several documents.]
-
-            [p [b Attributes]]
-            [list
-                [el title=File
-                    [html
-                        <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
-                            <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>file</td></tr>
-                            <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>Absolute or relative path to the file to be inserted. In case of a relative path, it is relative to the directory of the PML file in which the [c insert] is defined.</td></tr>
-                            <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>absolute_or_relative_file_path</td></tr>
-                            <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>yes</td></tr>
-                            <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>file = chapters/conclusion.pml</td></tr>
-                        </table>
-                    html]
-                ]
-            ]
-
-            [p [b HTML attributes]: not allowed]
-
-            [p [b Example]]
-            [code
-[doc title=A Strange Trip
-    [insert file=chapters/introduction.pml]
-    [insert file=chapters/story.pml]
-    [insert file=chapters/conclusion.pml]
-]
-            code]
-        ]
-        [ch (title="Constant Parameter" id="node_const")
-
-            [b Tag:] [c \[const] .. [c \]]
-
-            [p [b Description]]
-            [p A constant parameter is used to define text snippets that are re-used several times in the document. A constant parameter is composed of an identifier (name) and a value. The value assigned to the constant can be re-used in the document by simply specifying the constant's identifier between << and >>.]
-
-            [p [b Attributes]]
-            [p This node doesn't have attributes.]
-
-            [p [b HTML attributes]: not allowed]
-
-            [p [b Example]]
-            [code
-[const examples_root = http://www.example.com/project/source_code/examples]
-
-Here are two examples:
-
-[link url=<<examples_root>>/ex1.html text=example 1]
-
-[link url=<<examples_root>>/ex2.html text=example 2].
-            code]
         ]
     ]
 ]
