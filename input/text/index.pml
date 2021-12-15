@@ -1,6 +1,6 @@
 [doc [title PML Reference Manual]
     [p Author: Christian Neumanns]
-    [p Date: 2021-09-08]
+    [p Date: 2021-12-13]
     [ch [title Introduction]
         [p This document describes all standard [link url=https://www.pml-lang.dev/ text=PML] nodes. For each type of node, its tag and attributes are listed, and an example demonstrates how to use it.]
         [p If you have questions or suggestions then please send an email to contact {at} pml-lang {dot} dev.]
@@ -284,6 +284,68 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                         [code
 <section id="ch__1" class="pml-chapter">
     <h2 class="pml-chapter-title">What Are <i class="pml-italic">Your</i> Advantages?</h2>
+    <p class="pml-paragraph">...</p>
+</section>
+
+                        code]
+                    ]
+                ]
+            ]
+            [ch (id="node_subtitle")[title Chapter Subtitle]
+
+                [b Tag:] [c \[subtitle] .. [c \]]
+
+                [p [b Description]]
+                [p A subtitle for a chapter, displayed on a separate line after a chapter's title. If present, this node must follow a 'title' (chapter title) node. The subtitle is not displayed in the table of contents.]
+
+                [p [b Attributes]]
+                [list
+                    [el [header Node Identifier]
+                        [html
+                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
+                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node.<br /><br />An id can be used to:<br />- identify a node so that an internal link can be done with an 'xref' (cross reference) node.<br />- identify a node so that it can be styled individually with CSS<br />- create an HTML anchor so that it can be accessed with the # (hash) sign (e.g. writing id=foo will enable you to have an HTML link ending with #foo.<br /><br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
+                            </table>
+                        html]
+                    ]
+                ]
+
+                [p [b HTML attributes]: allowed]
+
+                [p [b Example]]
+                [list
+                    [el
+                        [p PML code:]
+                        [code
+[ch [title My Life as a Gardener]
+    [subtitle Why I Left the Corporate World]
+    ...
+]
+                        code]
+                    ]
+                    [el
+                        [p Result:]
+                        [html
+<div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
+<section id="ch__1" class="pml-chapter">
+    <h2 class="pml-chapter-title">My Life as a Gardener</h2>
+    <h2 class="pml-chapter-subtitle">Why I Left the Corporate World</h2>
+    <p class="pml-paragraph">...</p>
+</section>
+
+</div>
+                        html]
+                    ]
+                    [el
+                        [p HTML code generated:]
+                        [code
+<section id="ch__1" class="pml-chapter">
+    <h2 class="pml-chapter-title">My Life as a Gardener</h2>
+    <h2 class="pml-chapter-subtitle">Why I Left the Corporate World</h2>
     <p class="pml-paragraph">...</p>
 </section>
 
@@ -1360,6 +1422,80 @@ Table with 2 rows and 3 columns:
 
                             code]
                         ]
+                    ]
+                ]
+            ]
+            [ch (id="node_header")[title Header]
+
+                [b Tag:] [c \[header] .. [c \]]
+
+                [p [b Description]]
+                [p A header (small title) displayed on a separate line. A header is not included in the table of contents. Headers can be inserted anywhere in a document.]
+
+                [p [b Attributes]]
+                [list
+                    [el [header Node Identifier]
+                        [html
+                            <table border=0 cellspacing=0 cellpadding=3 style="margin-bottom:1em;">
+                                <tr><td style="text-align: right; vertical-align: top;">Id:</td><td>id</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Description:</td><td>A unique identifier for the node.<br /><br />An id can be used to:<br />- identify a node so that an internal link can be done with an 'xref' (cross reference) node.<br />- identify a node so that it can be styled individually with CSS<br />- create an HTML anchor so that it can be accessed with the # (hash) sign (e.g. writing id=foo will enable you to have an HTML link ending with #foo.<br /><br />An identifier must start with a letter and can be followed by any number of letters, digits, and underscores. Note for programmers: The regex of an identifier is: [a-zA-Z][a-zA-Z0-9_]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Type:</td><td>string or null</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Required:</td><td>no</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Default value:</td><td>null</td></tr>
+                                <tr><td style="text-align: right; vertical-align: top;">Example:</td><td>id = basic_concept</td></tr>
+                            </table>
+                        html]
+                    ]
+                ]
+
+                [p [b HTML attributes]: allowed]
+
+                [p [b Example]]
+                [list
+                    [el
+                        [p PML code:]
+                        [code
+[ch [title Advantages]
+    [header Advantage 1]
+    text text
+    [header Advantage 2]
+    text text
+    [header Advantage 3]
+    text text
+]
+                        code]
+                    ]
+                    [el
+                        [p Result:]
+                        [html
+<div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
+<section id="ch__1" class="pml-chapter">
+    <h2 class="pml-chapter-title">Advantages</h2>
+    <div class="pml-header">Advantage 1</div>
+    <p class="pml-paragraph">text text</p>
+    <div class="pml-header">Advantage 2</div>
+    <p class="pml-paragraph">text text</p>
+    <div class="pml-header">Advantage 3</div>
+    <p class="pml-paragraph">text text</p>
+</section>
+
+</div>
+                        html]
+                    ]
+                    [el
+                        [p HTML code generated:]
+                        [code
+<section id="ch__1" class="pml-chapter">
+    <h2 class="pml-chapter-title">Advantages</h2>
+    <div class="pml-header">Advantage 1</div>
+    <p class="pml-paragraph">text text</p>
+    <div class="pml-header">Advantage 2</div>
+    <p class="pml-paragraph">text text</p>
+    <div class="pml-header">Advantage 3</div>
+    <p class="pml-paragraph">text text</p>
+</section>
+
+                        code]
                     ]
                 ]
             ]
