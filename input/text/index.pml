@@ -1,6 +1,6 @@
 [doc [title PML Reference Manual]
     [p Author: Christian Neumanns]
-    [p Date: 2021-12-28]
+    [p Date: 2022-02-11]
     [ch [title Introduction]
         [p This document describes all standard [link url=https://www.pml-lang.dev/ text=PML] nodes. For each type of node, its tag and attributes are listed, and an example demonstrates how to use it.]
         [p If you have questions or suggestions then please send an email to contact {at} pml-lang {dot} dev.]
@@ -621,7 +621,7 @@ Some planets:
                     [b Tag:] [c \[table_data] .. [c table_data\]]
 
                     [p [b Description]]
-                    [p Simple table data defined as plain text, and rendered as a table.[nl]Each line of text represents a row.[nl]Cell values in a row are separated by a comma or a TAB character.[nl]The content of each cell can only be plain text. If formatted text or complex cell content (e.g. picture in a cell, or table in a table) is needed, then please use the 'table' tag.[nl]A header and footer can optionally be defined.[nl]The horizontal alignment (left, center, or right) can be specified for each column.[nl]The data will be rendered as a table.[nl]The following format rules apply:[nl]- Rows are separated by a line break. Empty lines are ignored.[nl]- Cells can be separated by a comma or a TAB character, but both separators cannot be mixed in a table.[nl]- Spaces before or after cell values are ignored.[nl]- If the second line is a dash (-) then the first line is a header.[nl]- If the second-last line is a dash (-) then the last line is a footer.[nl]]
+                    [p Simple table data defined as plain text, and rendered as a table.[nl]Each line of text represents a row.[nl]Cell values in a row are separated by a vertical bar (|), a semicolon (;), a comma (,) or a TAB character.[nl]The content of each cell can only be plain text. If formatted text or complex cell content (e.g. picture in a cell, or table in a table) is needed, then please use the 'table' tag.[nl]A header and footer can optionally be defined.[nl]The horizontal alignment (left, center, or right) can be specified for each column.[nl]The data will be rendered as a table.[nl]The following format rules apply:[nl]- Rows are separated by a line break. Empty lines are ignored.[nl]- Cells can be separated by a comma or a TAB character, but both separators cannot be mixed in a table.[nl]- Spaces before or after cell values are ignored.[nl]- If the second line is a dash (-) then the first line is a header.[nl]- If the second-last line is a dash (-) then the last line is a footer.[nl]]
 
                     [p [b Attributes]]
                     [list
