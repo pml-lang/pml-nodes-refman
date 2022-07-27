@@ -7,8 +7,6 @@
 /output
 /temp
 
-*.html
-
 # Directories and files starting with ---
 **/---*
 
