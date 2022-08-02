@@ -33,7 +33,7 @@ For more information about PML, please visit the [PML website].
 
 [install the _PML Companion_]: https://www.pml-lang.dev/downloads/install.html "Go to the PML Companion download page"
 [PML Nodes Reference Manual]: https://www.pml-lang.dev/docs/reference_manual/index.html
-[Java source code]: https://github.com/pml-lang/pml-companion-java "Visit the PML Companion source repository on GitHub"
+[Java source code]: https://github.com/pml-lang/pml-companion "Visit the PML Companion source repository on GitHub"
 [PML website]: https://www.pml-lang.dev "Visit the PML website"
 
 <!-- EOF -->
