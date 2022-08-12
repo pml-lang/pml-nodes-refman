@@ -161,7 +161,7 @@
                 [b Kind:] Node with child nodes
 
                 [header Description]
-                [p A chapter or sub-chapter in the document. A chapter can have any number of sub-chapters. Chapters can be nested to any level.]
+                [p A chapter or sub-chapter in the document.[nl]A chapter can have any number of sub-chapters. Chapters can be nested to any level.[nl][nl]Note: The idiomatic way of identifying a chapter for cross-referencing is to assign an 'id' to the chapter node (and not to the chapter's title or subtitle node).]
 
                 [header Attributes]
                 [list 
