@@ -1,7 +1,7 @@
 [doc [title PML Nodes Reference Manual]
 
     [table 
-        [tr [tc [b PML Version]][tc PMLC 3.0.0 2022-08-19]]
+        [tr [tc [b PML Version]][tc PMLC 3.1.0 2022-10-03]]
         [tr [tc [b License]][tc [link url=https://creativecommons.org/licenses/by-nd/4.0/ text="CC BY-ND 4.0"]]]
         [tr [tc [b Author and Copyright]][tc Christian Neumanns]]
         [tr [tc [b Website]][tc [link url=https://www.pml-lang.dev/]]]
@@ -67,6 +67,7 @@
                             <p class="pml-paragraph">Lorem ipsum blah blah blah </p>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -77,6 +78,7 @@
                             <h1 class="pml-doc-title">A Nice Surprise</h1>
                             <p class="pml-paragraph">Author: Giovanni Spiridigliotsky</p>
                             <p class="pml-paragraph">Lorem ipsum blah blah blah </p>
+                            
                             ~~~
                         ]
                     ]
@@ -124,6 +126,7 @@
                             Second sentence of second paragraph.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             [p Third paragraph.]
+                            
                             ~~~
                         ]
                     ]
@@ -137,6 +140,7 @@
                             <p class="pml-paragraph">Third paragraph.</p>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -147,6 +151,7 @@
                             <p class="pml-paragraph">First sentence of first paragraph. Second sentence of first paragraph.</p>
                             <p class="pml-paragraph">First sentence of second paragraph. Second sentence of second paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                             <p class="pml-paragraph">Third paragraph.</p>
+                            
                             ~~~
                         ]
                     ]
@@ -220,6 +225,7 @@
                             </section>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -241,6 +247,7 @@
                                 </section>
                             
                             </section>
+                            
                             ~~~
                         ]
                     ]
@@ -300,6 +307,7 @@
                             </section>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -312,6 +320,7 @@
                                 <p class="pml-paragraph">... </p>
                             
                             </section>
+                            
                             ~~~
                         ]
                     ]
@@ -373,6 +382,7 @@
                             </section>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -386,6 +396,7 @@
                                 <p class="pml-paragraph">... </p>
                             
                             </section>
+                            
                             ~~~
                         ]
                     ]
@@ -432,6 +443,7 @@
                             <p class="pml-paragraph">text </p>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -441,6 +453,7 @@
                             ~~~
                             <h1 class="pml-doc-title">Options Demo</h1>
                             <p class="pml-paragraph">text </p>
+                            
                             ~~~
                         ]
                     ]
@@ -585,6 +598,7 @@
                                 </ul>
                                 
                                 </div>
+                                
                                 ~~~
                             ]
                         ]
@@ -652,6 +666,7 @@
                                     </li>
                                 
                                 </ul>
+                                
                                 ~~~
                             ]
                         ]
@@ -734,6 +749,7 @@
                                 </ul>
                                 
                                 </div>
+                                
                                 ~~~
                             ]
                         ]
@@ -760,6 +776,7 @@
                                     </li>
                                 
                                 </ul>
+                                
                                 ~~~
                             ]
                         ]
@@ -871,6 +888,7 @@
                                 </table>
                                 
                                 </div>
+                                
                                 ~~~
                             ]
                         ]
@@ -904,6 +922,7 @@
                                 <td class="pml-table-footer-cell pml-text-align-center"></td><td class="pml-table-footer-cell pml-text-align-left"></td><td class="pml-table-footer-cell pml-text-align-right">Total: 162.50</td></tr>
                                     </tfoot>
                                 </table>
+                                
                                 ~~~
                             ]
                         ]
@@ -1082,6 +1101,7 @@
                                 </table>
                                 
                                 </div>
+                                
                                 ~~~
                             ]
                         ]
@@ -1184,6 +1204,7 @@
                                     </tfoot>
                                 
                                 </table>
+                                
                                 ~~~
                             ]
                         ]
@@ -1296,6 +1317,7 @@
                                 </table>
                                 
                                 </div>
+                                
                                 ~~~
                             ]
                         ]
@@ -1355,6 +1377,7 @@
                                     </tr>
                                 
                                 </table>
+                                
                                 ~~~
                             ]
                         ]
@@ -1467,6 +1490,7 @@
                                 </table>
                                 
                                 </div>
+                                
                                 ~~~
                             ]
                         ]
@@ -1526,6 +1550,7 @@
                                     </tfoot>
                                 
                                 </table>
+                                
                                 ~~~
                             ]
                         ]
@@ -1617,6 +1642,7 @@
                                 </table>
                                 
                                 </div>
+                                
                                 ~~~
                             ]
                         ]
@@ -1658,6 +1684,7 @@
                                     </tr>
                                 
                                 </table>
+                                
                                 ~~~
                             ]
                         ]
@@ -1749,6 +1776,7 @@
                                 </table>
                                 
                                 </div>
+                                
                                 ~~~
                             ]
                         ]
@@ -1790,6 +1818,7 @@
                                     </tr>
                                 
                                 </table>
+                                
                                 ~~~
                             ]
                         ]
@@ -1861,6 +1890,7 @@
                             </section>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -1878,6 +1908,7 @@
                                 <p class="pml-paragraph">... </p>
                             
                             </section>
+                            
                             ~~~
                         ]
                     ]
@@ -1931,6 +1962,7 @@
                             <div class="pml-caption">Figure 1: Top Brain Boosters</div>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -1939,6 +1971,7 @@
                         [code 
                             ~~~
                             <div class="pml-caption">Figure 1: Top Brain Boosters</div>
+                            
                             ~~~
                         ]
                     ]
@@ -2012,6 +2045,7 @@
                             </div>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -2025,6 +2059,7 @@
                                     <p class="pml-paragraph">We will have a look at some <i class="pml-italic">striking</i> examples later in the book. </p>
                                 </div>
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -2083,6 +2118,7 @@
                             </div>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -2096,6 +2132,7 @@
                                     <p class="pml-paragraph">Please remember that ...</p>
                                 </div>
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -2173,6 +2210,7 @@
                             </blockquote>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -2190,6 +2228,7 @@
                                 </div>
                                 <div class="pml-quote-source">Albert Einstein, physicist</div>
                             </blockquote>
+                            
                             ~~~
                         ]
                     ]
@@ -2238,6 +2277,7 @@
                               1   2   1
                             1   3   3   1
                             ]
+                            
                             ~~~
                         ]
                     ]
@@ -2255,6 +2295,7 @@
                             </pre>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -2269,6 +2310,7 @@
                               1   2   1
                             1   3   3   1
                             </pre>
+                            
                             ~~~
                         ]
                     ]
@@ -2327,6 +2369,7 @@
                             </div>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -2338,6 +2381,7 @@
                                 <p class="pml-paragraph">Important message: ... </p>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -2395,6 +2439,7 @@
                             <div class="pml-html"><p>This is pure <b>HTML</b> code.</p></div>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -2403,6 +2448,7 @@
                         [code 
                             ~~~
                             <div class="pml-html"><p>This is pure <b>HTML</b> code.</p></div>
+                            
                             ~~~
                         ]
                     ]
@@ -2531,6 +2577,7 @@
                             [image ( source = media/strawberries.jpg
                                 link = https://unsplash.com/photos/kH3Sr9K8EBA
                                 html_alt = "Delicious strawberries" ) ]
+                            
                             ~~~
                         ]
                     ]
@@ -2547,6 +2594,7 @@
                             </figure>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -2560,6 +2608,7 @@
                                     <img class="pml-image" src="media/strawberries.jpg">
                                 </a>
                             </figure>
+                            
                             ~~~
                         ]
                     ]
@@ -2644,6 +2693,7 @@
                             ~~~
                             [header Bird talk]
                             [audio source=media/bird_talk.mp3]
+                            
                             ~~~
                         ]
                     ]
@@ -2661,6 +2711,7 @@
                             </figure>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -2675,6 +2726,7 @@
                                     Your browser does not support the audio element.
                                 </audio>
                             </figure>
+                            
                             ~~~
                         ]
                     ]
@@ -2785,6 +2837,7 @@
                             ~~~
                             [header Beautiful Nature]
                             [video source = media/red_flower.mp4]
+                            
                             ~~~
                         ]
                     ]
@@ -2802,6 +2855,7 @@
                             </figure>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -2816,6 +2870,7 @@
                                     Your browser does not support the video element.
                                 </video>
                             </figure>
+                            
                             ~~~
                         ]
                     ]
@@ -2929,6 +2984,7 @@
                                 yid = qrcZqnICYbs
                                 width = 600
                                 height = 400 ) ]
+                            
                             ~~~
                         ]
                     ]
@@ -2943,6 +2999,7 @@
                             </figure>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -2954,6 +3011,331 @@
                             <figure style="text-align: left">
                                 <iframe class="pml-youtube-video" src="https://www.youtube.com/embed/qrcZqnICYbs" width="600" height="400" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
                             </figure>
+                            
+                            ~~~
+                        ]
+                    ]
+                ]
+
+            ]
+
+        ]
+
+        [ch ( id="footnotes_block" ) [title Footnotes]
+            [ch ( id="node_fnotes" ) [title Footnotes Placeholder]
+
+                [b Name: ][c fnotes]
+
+                [b Kind:] Node without child nodes
+
+                [header Description]
+                [p Node 'fnotes' is used as a placeholder for printing/displaying footnotes.[nl]All footnotes not yet displayed will be displayed as soon as an 'fnotes' node is encountered. This includes inline and non-inline footnotes.[nl]A document can have any number of 'fnotes' nodes. This allows different sets of footnotes to be printed at different locations. For example, instead of displaying all footnotes at the end of the document, the footnotes contained in each chapter could be displayed at the end of each chapter.]
+
+                [header Attributes]
+                [list 
+                    [el 
+                        [header Node Identifier]
+                        [table 
+                            [tr [tc [b Name]][tc id]]
+                            [tr [tc [b Is positional parameter]][tc No]]
+                            [tr [tc [b Description]][tc A unique identifier for the node.[nl][nl]An id can be used to:[nl]- identify a node so that an internal link can be done with an 'xref' (cross reference) node.[nl]- identify a node so that it can be styled individually with CSS[nl]- create an HTML anchor so that it can be accessed with the # (hash) sign (e.g. writing id=foo will enable you to have an HTML link ending with #foo.[nl][nl]An identifier must start with a letter or an underscore, and can be followed by any number of letters, digits, underscores, dots, and hyphens. Note for programmers: The regex of an identifier is: \[a-zA-Z_\]\[a-zA-Z0-9_\\.-\]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.[nl]]]
+                            [tr [tc [b Type]][tc string or null]]
+                            [tr [tc [b Required]][tc no]]
+                            [tr [tc [b Default Value]][tc null]]
+                            [tr [tc [b Example(s)]][tc id = basic_concept]]
+                        ]
+                    ]
+
+                ]
+
+                [b HTML Attributes:] allowed
+
+                [header Example]
+                [list 
+                    [el 
+                        [p PML code:]
+                        [code 
+                            ~~~
+                            [ch [title Chapter 1]
+                                text [fnote footnote 1] text
+                            
+                                text [fnote footnote 2] text
+                            
+                                [header Footnotes of Chapter 1]
+                                [fnotes]
+                            ]
+                            
+                            [ch [title Chapter 2]
+                                text [fnote_ref did=f3] text
+                            
+                                text [fnote footnote 4] text
+                            
+                                [fnote_def (id=f3)
+                                    footnote 3
+                                ]
+                            
+                                [header Footnotes of Chapter 2]
+                                [fnotes]
+                            ]
+                            
+                            ~~~
+                        ]
+                    ]
+                    [el 
+                        [p Result:]
+                        [html 
+                            ~~~
+                            <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
+                            <section id="ch__1" class="pml-chapter">
+                                <h2 class="pml-chapter-title">Chapter 1</h2>
+                                <p class="pml-paragraph">text <sup id="fnr__1" class="pml-footnote-ref"><a href="#fnd__1">1</a></sup> text</p>
+                                <p class="pml-paragraph">text <sup id="fnr__2" class="pml-footnote-ref"><a href="#fnd__2">2</a></sup> text</p>
+                                <div class="pml-header">Footnotes of Chapter 1</div>
+                                <div class="pml-footnotes">
+                                    <table>
+                                        <tr id="fnd__1" class="pml-footnote">
+                                            <td style="vertical-align: top;">1.</td>
+                                            <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__1">^</a></td>
+                                            <td>
+                                                <p class="pml-paragraph">footnote 1</p>
+                                            </td>
+                                        </tr>
+                                        <tr id="fnd__2" class="pml-footnote">
+                                            <td style="vertical-align: top;">2.</td>
+                                            <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__2">^</a></td>
+                                            <td>
+                                                <p class="pml-paragraph">footnote 2</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            
+                            </section>
+                            <section id="ch__2" class="pml-chapter">
+                                <h2 class="pml-chapter-title">Chapter 2</h2>
+                                <p class="pml-paragraph">text <sup id="fnr__3" class="pml-footnote-ref"><a href="#f3">1</a></sup> text</p>
+                                <p class="pml-paragraph">text <sup id="fnr__4" class="pml-footnote-ref"><a href="#fnd__3">2</a></sup> text</p>
+                                <div class="pml-header">Footnotes of Chapter 2</div>
+                                <div class="pml-footnotes">
+                                    <table>
+                                        <tr id="f3" class="pml-footnote">
+                                            <td style="vertical-align: top;">1.</td>
+                                            <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__3">^</a></td>
+                                            <td>
+                                                <p class="pml-paragraph">footnote 3</p>
+                                            </td>
+                                        </tr>
+                                        <tr id="fnd__3" class="pml-footnote">
+                                            <td style="vertical-align: top;">2.</td>
+                                            <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__4">^</a></td>
+                                            <td>
+                                                <p class="pml-paragraph">footnote 4</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            
+                            </section>
+                            
+                            </div>
+                            
+                            ~~~
+                        ]
+                    ]
+                    [el 
+                        [p HTML code generated:]
+                        [code 
+                            ~~~
+                            <section id="ch__1" class="pml-chapter">
+                                <h2 class="pml-chapter-title">Chapter 1</h2>
+                                <p class="pml-paragraph">text <sup id="fnr__1" class="pml-footnote-ref"><a href="#fnd__1">1</a></sup> text</p>
+                                <p class="pml-paragraph">text <sup id="fnr__2" class="pml-footnote-ref"><a href="#fnd__2">2</a></sup> text</p>
+                                <div class="pml-header">Footnotes of Chapter 1</div>
+                                <div class="pml-footnotes">
+                                    <table>
+                                        <tr id="fnd__1" class="pml-footnote">
+                                            <td style="vertical-align: top;">1.</td>
+                                            <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__1">^</a></td>
+                                            <td>
+                                                <p class="pml-paragraph">footnote 1</p>
+                                            </td>
+                                        </tr>
+                                        <tr id="fnd__2" class="pml-footnote">
+                                            <td style="vertical-align: top;">2.</td>
+                                            <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__2">^</a></td>
+                                            <td>
+                                                <p class="pml-paragraph">footnote 2</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            
+                            </section>
+                            <section id="ch__2" class="pml-chapter">
+                                <h2 class="pml-chapter-title">Chapter 2</h2>
+                                <p class="pml-paragraph">text <sup id="fnr__3" class="pml-footnote-ref"><a href="#f3">1</a></sup> text</p>
+                                <p class="pml-paragraph">text <sup id="fnr__4" class="pml-footnote-ref"><a href="#fnd__3">2</a></sup> text</p>
+                                <div class="pml-header">Footnotes of Chapter 2</div>
+                                <div class="pml-footnotes">
+                                    <table>
+                                        <tr id="f3" class="pml-footnote">
+                                            <td style="vertical-align: top;">1.</td>
+                                            <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__3">^</a></td>
+                                            <td>
+                                                <p class="pml-paragraph">footnote 3</p>
+                                            </td>
+                                        </tr>
+                                        <tr id="fnd__3" class="pml-footnote">
+                                            <td style="vertical-align: top;">2.</td>
+                                            <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__4">^</a></td>
+                                            <td>
+                                                <p class="pml-paragraph">footnote 4</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            
+                            </section>
+                            
+                            ~~~
+                        ]
+                    ]
+                ]
+
+            ]
+
+            [ch ( id="node_fnote_def" ) [title Footnote Definition]
+
+                [b Name: ][c fnote_def]
+
+                [b Kind:] Node with child nodes
+
+                [header Description]
+                [p 'fnote_def' is used to define the content of a footnote.[nl]Every 'fnote_def' node must have a unique identifier, explicitly specified by attribute 'id'. This identifier is used in 'fnote_ref' nodes to insert a link to the footnote in the text, using attribute 'did'.[nl]Several references to the same footnote can exist in the document. This is done by re-using the identifier of an 'fnote_def' node in several 'fnote_ref' nodes.[nl]'fnote_def' nodes can be defined anywhere in the document, but they must be defined before the 'fnotes' node used to display the footnotes. For example, the content of all footnotes could be defined at the beginning or the end of the document. Or, footnotes could be defined at the end of the paragraph in which they are used.[nl]'fnote_def' nodes can contain block nodes (besides inline nodes), for example to include lists, tables, images etc. in a footnote.[nl]]
+
+                [header Attributes]
+                [list 
+                    [el 
+                        [header Node Identifier]
+                        [table 
+                            [tr [tc [b Name]][tc id]]
+                            [tr [tc [b Is positional parameter]][tc No]]
+                            [tr [tc [b Description]][tc A unique identifier for the node.[nl][nl]An id can be used to:[nl]- identify a node so that an internal link can be done with an 'xref' (cross reference) node.[nl]- identify a node so that it can be styled individually with CSS[nl]- create an HTML anchor so that it can be accessed with the # (hash) sign (e.g. writing id=foo will enable you to have an HTML link ending with #foo.[nl][nl]An identifier must start with a letter or an underscore, and can be followed by any number of letters, digits, underscores, dots, and hyphens. Note for programmers: The regex of an identifier is: \[a-zA-Z_\]\[a-zA-Z0-9_\\.-\]*. Identifiers are case-sensitive. The following identifiers are all different: name, Name, and NAME.[nl]]]
+                            [tr [tc [b Type]][tc string or null]]
+                            [tr [tc [b Required]][tc no]]
+                            [tr [tc [b Default Value]][tc null]]
+                            [tr [tc [b Example(s)]][tc id = basic_concept]]
+                        ]
+                    ]
+
+                ]
+
+                [b HTML Attributes:] allowed
+
+                [header Example]
+                [list 
+                    [el 
+                        [p PML code:]
+                        [code 
+                            ~~~
+                            [fnote_def (id=fn_1)
+                                Text of [i footnote 1]
+                            
+                                Second paragraph.
+                            ]
+                            
+                            [fnote_def (id=fn_2)
+                                [table_data
+                                    ~~~
+                                    c11 | c12 | c13
+                                    c21 | c22 | c23
+                                    ~~~
+                                ]
+                            ]
+                            
+                            text [fnote_ref did=fn_1] text
+                            
+                            text [fnote_ref did=fn_2] text [fnote_ref did=fn_1] text
+                            
+                            [header Footnotes]
+                            [fnotes]
+                            ~~~
+                        ]
+                    ]
+                    [el 
+                        [p Result:]
+                        [html 
+                            ~~~
+                            <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
+                            <p class="pml-paragraph">text <sup id="fnr__1" class="pml-footnote-ref"><a href="#fn_1">1</a></sup> text</p>
+                            <p class="pml-paragraph">text <sup id="fnr__2" class="pml-footnote-ref"><a href="#fn_2">2</a></sup> text <sup id="fnr__3" class="pml-footnote-ref"><a href="#fn_1">1</a></sup> text</p>
+                            <div class="pml-header">Footnotes</div>
+                            <div class="pml-footnotes">
+                                <table>
+                                    <tr id="fn_1" class="pml-footnote">
+                                        <td style="vertical-align: top;">1.</td>
+                                        <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__1">^</a><a href="#fnr__3">^</a></td>
+                                        <td>
+                                            <p class="pml-paragraph">Text of <i class="pml-italic">footnote 1</i></p>
+                                            <p class="pml-paragraph">Second paragraph. </p>
+                                        </td>
+                                    </tr>
+                                    <tr id="fn_2" class="pml-footnote">
+                                        <td style="vertical-align: top;">2.</td>
+                                        <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__2">^</a></td>
+                                        <td>
+                                            <table class="pml-table">
+                                                <tbody class="pml-table-body">
+                                                    <tr class="pml-table-body-row">
+                            <td class="pml-table-body-cell">c11</td><td class="pml-table-body-cell">c12</td><td class="pml-table-body-cell">c13</td></tr>
+                                                    <tr class="pml-table-body-row">
+                            <td class="pml-table-body-cell">c21</td><td class="pml-table-body-cell">c22</td><td class="pml-table-body-cell">c23</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            </div>
+                            
+                            ~~~
+                        ]
+                    ]
+                    [el 
+                        [p HTML code generated:]
+                        [code 
+                            ~~~
+                            <p class="pml-paragraph">text <sup id="fnr__1" class="pml-footnote-ref"><a href="#fn_1">1</a></sup> text</p>
+                            <p class="pml-paragraph">text <sup id="fnr__2" class="pml-footnote-ref"><a href="#fn_2">2</a></sup> text <sup id="fnr__3" class="pml-footnote-ref"><a href="#fn_1">1</a></sup> text</p>
+                            <div class="pml-header">Footnotes</div>
+                            <div class="pml-footnotes">
+                                <table>
+                                    <tr id="fn_1" class="pml-footnote">
+                                        <td style="vertical-align: top;">1.</td>
+                                        <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__1">^</a><a href="#fnr__3">^</a></td>
+                                        <td>
+                                            <p class="pml-paragraph">Text of <i class="pml-italic">footnote 1</i></p>
+                                            <p class="pml-paragraph">Second paragraph. </p>
+                                        </td>
+                                    </tr>
+                                    <tr id="fn_2" class="pml-footnote">
+                                        <td style="vertical-align: top;">2.</td>
+                                        <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__2">^</a></td>
+                                        <td>
+                                            <table class="pml-table">
+                                                <tbody class="pml-table-body">
+                                                    <tr class="pml-table-body-row">
+                            <td class="pml-table-body-cell">c11</td><td class="pml-table-body-cell">c12</td><td class="pml-table-body-cell">c13</td></tr>
+                                                    <tr class="pml-table-body-row">
+                            <td class="pml-table-body-cell">c21</td><td class="pml-table-body-cell">c22</td><td class="pml-table-body-cell">c23</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
                             ~~~
                         ]
                     ]
@@ -3032,6 +3414,7 @@
                                 .
                                 ~~~
                             ]
+                            
                             ~~~
                         ]
                     ]
@@ -3045,6 +3428,7 @@
                             .</code></pre>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -3055,6 +3439,7 @@
                             <pre class="pml-code"><code>repeat 3 times
                                 write_line ( &quot;Hello&quot; )
                             .</code></pre>
+                            
                             ~~~
                         ]
                     ]
@@ -3208,6 +3593,7 @@
                             </code></pre>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -3222,6 +3608,7 @@
                                 OS.out.write_line ( &quot;Hello world&quot; )
                             .
                             </code></pre>
+                            
                             ~~~
                         ]
                     ]
@@ -3279,6 +3666,7 @@
                             <pre class="pml-input">pmlc pml_to_html article.pml</pre>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -3287,6 +3675,7 @@
                         [code 
                             ~~~
                             <pre class="pml-input">pmlc pml_to_html article.pml</pre>
+                            
                             ~~~
                         ]
                     ]
@@ -3346,6 +3735,7 @@
                             The new database has been created successfully.</pre>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -3355,6 +3745,7 @@
                             ~~~
                             <pre class="pml-output">Congratulations!
                             The new database has been created successfully.</pre>
+                            
                             ~~~
                         ]
                     ]
@@ -3401,6 +3792,7 @@
                             <p class="pml-paragraph">This is a <b class="pml-bold">huge</b> advantage.</p>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -3409,6 +3801,7 @@
                         [code 
                             ~~~
                             <p class="pml-paragraph">This is a <b class="pml-bold">huge</b> advantage.</p>
+                            
                             ~~~
                         ]
                     ]
@@ -3450,6 +3843,7 @@
                             <p class="pml-paragraph">This is a <b class="pml-bold"><i class="pml-italic">very</i> important</b> point.</p>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -3459,6 +3853,7 @@
                             ~~~
                             <p class="pml-paragraph">We want <i class="pml-italic">simplicity</i>.</p>
                             <p class="pml-paragraph">This is a <b class="pml-bold"><i class="pml-italic">very</i> important</b> point.</p>
+                            
                             ~~~
                         ]
                     ]
@@ -3501,6 +3896,7 @@
                             <p class="pml-paragraph">This is <sub class="pml-subscript">subscript</sub>, and this is <sup class="pml-superscript">superscript</sup></p>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -3510,6 +3906,7 @@
                             ~~~
                             <p class="pml-paragraph">Water: H<sub class="pml-subscript">2</sub>O</p>
                             <p class="pml-paragraph">This is <sub class="pml-subscript">subscript</sub>, and this is <sup class="pml-superscript">superscript</sup></p>
+                            
                             ~~~
                         ]
                     ]
@@ -3552,6 +3949,7 @@
                             <p class="pml-paragraph">This is <sup class="pml-superscript">superscript</sup>, and this is <sub class="pml-subscript">subscript</sub></p>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -3561,6 +3959,7 @@
                             ~~~
                             <p class="pml-paragraph">2<sup class="pml-superscript">4</sup> = 16</p>
                             <p class="pml-paragraph">This is <sup class="pml-superscript">superscript</sup>, and this is <sub class="pml-subscript">subscript</sub></p>
+                            
                             ~~~
                         ]
                     ]
@@ -3603,6 +4002,7 @@
                             <p class="pml-paragraph">SOLD OUT!</p>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -3612,6 +4012,7 @@
                             ~~~
                             <p class="pml-paragraph"><s class="pml-strikethrough">Only 50 tickets left.</s></p>
                             <p class="pml-paragraph">SOLD OUT!</p>
+                            
                             ~~~
                         ]
                     ]
@@ -3651,6 +4052,7 @@
                             <p class="pml-paragraph">The assignment <code class="pml-inline-code">pi = 3.1415</code> means we are using <i class="pml-italic">four</i> decimals for <code class="pml-inline-code">pi</code>.</p>
                             
                             </div>
+                            
                             ~~~
                         ]
                     ]
@@ -3659,6 +4061,7 @@
                         [code 
                             ~~~
                             <p class="pml-paragraph">The assignment <code class="pml-inline-code">pi = 3.1415</code> means we are using <i class="pml-italic">four</i> decimals for <code class="pml-inline-code">pi</code>.</p>
+                            
                             ~~~
                         ]
                     ]
@@ -3727,6 +4130,7 @@
                         <p class="pml-paragraph">Please have a look at <a class="pml-link" href="https://www.pml-lang.dev/docs/articles/practical-document-markup-language/index.html">this article</a> for more information.</p>
                         
                         </div>
+                        
                         ~~~
                     ]
                 ]
@@ -3735,6 +4139,7 @@
                     [code 
                         ~~~
                         <p class="pml-paragraph">Please have a look at <a class="pml-link" href="https://www.pml-lang.dev/docs/articles/practical-document-markup-language/index.html">this article</a> for more information.</p>
+                        
                         ~~~
                     ]
                 ]
@@ -3774,6 +4179,7 @@
                         <p class="pml-paragraph">Math's ring operator is &#x2218;.</p>
                         
                         </div>
+                        
                         ~~~
                     ]
                 ]
@@ -3782,6 +4188,7 @@
                     [code 
                         ~~~
                         <p class="pml-paragraph">Math's ring operator is &#x2218;.</p>
+                        
                         ~~~
                     ]
                 ]
@@ -3843,6 +4250,7 @@
                         [ch [title Conclusion]
                             As we saw in chapter [xref node_id=solution], it is ...
                         ]
+                        
                         ~~~
                     ]
                 ]
@@ -3863,6 +4271,7 @@
                         </section>
                         
                         </div>
+                        
                         ~~~
                     ]
                 ]
@@ -3880,6 +4289,7 @@
                             <p class="pml-paragraph">As we saw in chapter <a class="pml-xref" href="#solution">A Beautiful Solution</a>, it is ... </p>
                         
                         </section>
+                        
                         ~~~
                     ]
                 ]
@@ -3919,6 +4329,7 @@
                         <p class="pml-paragraph">This is a <span class="pml-span" style="color:red;background-color:yellow">huge</span> advantage.</p>
                         
                         </div>
+                        
                         ~~~
                     ]
                 ]
@@ -3927,6 +4338,7 @@
                     [code 
                         ~~~
                         <p class="pml-paragraph">This is a <span class="pml-span" style="color:red;background-color:yellow">huge</span> advantage.</p>
+                        
                         ~~~
                     ]
                 ]
@@ -3966,6 +4378,7 @@
                         <p class="pml-paragraph">Line 1<br /><br />Line 2</p>
                         
                         </div>
+                        
                         ~~~
                     ]
                 ]
@@ -3974,6 +4387,7 @@
                     [code 
                         ~~~
                         <p class="pml-paragraph">Line 1<br /><br />Line 2</p>
+                        
                         ~~~
                     ]
                 ]
@@ -4016,6 +4430,7 @@
                         <p class="pml-paragraph">This is &nbsp;g&nbsp;&nbsp;o&nbsp;&nbsp;o&nbsp;&nbsp;d&nbsp;!</p>
                         
                         </div>
+                        
                         ~~~
                     ]
                 ]
@@ -4025,6 +4440,7 @@
                         ~~~
                         <p class="pml-paragraph">This is g o o d !</p>
                         <p class="pml-paragraph">This is &nbsp;g&nbsp;&nbsp;o&nbsp;&nbsp;o&nbsp;&nbsp;d&nbsp;!</p>
+                        
                         ~~~
                     ]
                 ]
@@ -4054,6 +4470,7 @@
                         ~~~
                         [text All is very well.]
                         All is very well.
+                        
                         ~~~
                     ]
                 ]
@@ -4065,6 +4482,7 @@
                         <p class="pml-paragraph">All is very well. All is very well. </p>
                         
                         </div>
+                        
                         ~~~
                     ]
                 ]
@@ -4073,9 +4491,258 @@
                     [code 
                         ~~~
                         <p class="pml-paragraph">All is very well. All is very well. </p>
+                        
                         ~~~
                     ]
                 ]
+            ]
+
+        ]
+
+        [ch ( id="footnotes_inline" ) [title Footnotes]
+            [ch ( id="node_fnote" ) [title Inline Footnote]
+
+                [b Name: ][c fnote]
+
+                [b Kind:] Node with child nodes
+
+                [header Description]
+                [p Inline footnotes are footnotes whose content is defined inline. They are displayed later in the document, as soon as an 'fnotes' node is encountered.[nl]Inline footnotes can contain text and other inline nodes to style the footnote. They cannot contain block nodes.]
+
+                [header Attributes]
+                [p This node doesn't have attributes.]
+
+                [b HTML Attributes:] allowed
+
+                [header Example]
+                [list 
+                    [el 
+                        [p PML code:]
+                        [code 
+                            ~~~
+                            text text [fnote text of footnote 1] text
+                            
+                            text [fnote text of footnote 2 with [i italic] and [b bold] words] text text
+                            
+                            text text [fnote
+                                text of footnote 3
+                            ] text text
+                            
+                            [fnotes]
+                            
+                            ~~~
+                        ]
+                    ]
+                    [el 
+                        [p Result:]
+                        [html 
+                            ~~~
+                            <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
+                            <p class="pml-paragraph">text text <sup id="fnr__1" class="pml-footnote-ref"><a href="#fnd__1">1</a></sup> text</p>
+                            <p class="pml-paragraph">text <sup id="fnr__2" class="pml-footnote-ref"><a href="#fnd__2">2</a></sup> text text</p>
+                            <p class="pml-paragraph">text text <sup id="fnr__3" class="pml-footnote-ref"><a href="#fnd__3">3</a></sup> text text</p>
+                            <div class="pml-footnotes">
+                                <table>
+                                    <tr id="fnd__1" class="pml-footnote">
+                                        <td style="vertical-align: top;">1.</td>
+                                        <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__1">^</a></td>
+                                        <td>
+                                            <p class="pml-paragraph">text of footnote 1</p>
+                                        </td>
+                                    </tr>
+                                    <tr id="fnd__2" class="pml-footnote">
+                                        <td style="vertical-align: top;">2.</td>
+                                        <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__2">^</a></td>
+                                        <td>
+                                            <p class="pml-paragraph">text of footnote 2 with <i class="pml-italic">italic</i> and <b class="pml-bold">bold</b> words</p>
+                                        </td>
+                                    </tr>
+                                    <tr id="fnd__3" class="pml-footnote">
+                                        <td style="vertical-align: top;">3.</td>
+                                        <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__3">^</a></td>
+                                        <td>
+                                            <p class="pml-paragraph"> text of footnote 3 </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            </div>
+                            
+                            ~~~
+                        ]
+                    ]
+                    [el 
+                        [p HTML code generated:]
+                        [code 
+                            ~~~
+                            <p class="pml-paragraph">text text <sup id="fnr__1" class="pml-footnote-ref"><a href="#fnd__1">1</a></sup> text</p>
+                            <p class="pml-paragraph">text <sup id="fnr__2" class="pml-footnote-ref"><a href="#fnd__2">2</a></sup> text text</p>
+                            <p class="pml-paragraph">text text <sup id="fnr__3" class="pml-footnote-ref"><a href="#fnd__3">3</a></sup> text text</p>
+                            <div class="pml-footnotes">
+                                <table>
+                                    <tr id="fnd__1" class="pml-footnote">
+                                        <td style="vertical-align: top;">1.</td>
+                                        <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__1">^</a></td>
+                                        <td>
+                                            <p class="pml-paragraph">text of footnote 1</p>
+                                        </td>
+                                    </tr>
+                                    <tr id="fnd__2" class="pml-footnote">
+                                        <td style="vertical-align: top;">2.</td>
+                                        <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__2">^</a></td>
+                                        <td>
+                                            <p class="pml-paragraph">text of footnote 2 with <i class="pml-italic">italic</i> and <b class="pml-bold">bold</b> words</p>
+                                        </td>
+                                    </tr>
+                                    <tr id="fnd__3" class="pml-footnote">
+                                        <td style="vertical-align: top;">3.</td>
+                                        <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__3">^</a></td>
+                                        <td>
+                                            <p class="pml-paragraph"> text of footnote 3 </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            ~~~
+                        ]
+                    ]
+                ]
+
+            ]
+
+            [ch ( id="node_fnote_ref" ) [title Footnote Reference]
+
+                [b Name: ][c fnote_ref]
+
+                [b Kind:] Node without child nodes
+
+                [header Description]
+                [p Node 'fnote_ref' is used to insert a footnote defined with an 'fnote_def' node.[nl]Attribute 'did' must be explicitly defined, and must be equal to the 'id' attribute defined in node 'fnote_def'.[nl]The same 'fnote_def' node can be re-used in several 'fnote_ref' nodes.[nl]]
+
+                [header Attributes]
+                [list 
+                    [el 
+                        [header Footnote Definition Id]
+                        [table 
+                            [tr [tc [b Name]][tc did]]
+                            [tr [tc [b Is positional parameter]][tc No]]
+                            [tr [tc [b Description]][tc The identifier of the footnote definition.]]
+                            [tr [tc [b Type]][tc string]]
+                            [tr [tc [b Required]][tc yes]]
+                            [tr [tc [b Default Value]][tc none]]
+                            [tr [tc [b Example(s)]][tc did = fn_7]]
+                        ]
+                    ]
+
+                    [el 
+                        [header Inline Text]
+                        [table 
+                            [tr [tc [b Name]][tc text]]
+                            [tr [tc [b Is positional parameter]][tc No]]
+                            [tr [tc [b Description]][tc The text to be displayed inline.[nl]By default, the index in the list of footnotes is used.]]
+                            [tr [tc [b Type]][tc string or null]]
+                            [tr [tc [b Required]][tc no]]
+                            [tr [tc [b Default Value]][tc null]]
+                            [tr [tc [b Example(s)]][tc text = "Bloch, 2017"]]
+                        ]
+                    ]
+
+                ]
+
+                [b HTML Attributes:] allowed
+
+                [header Example]
+                [list 
+                    [el 
+                        [p PML code:]
+                        [code 
+                            ~~~
+                            text [fnote_ref did=1] text
+                            
+                            Advice for life [fnote_ref did=2 text="Rodegast 1987"].
+                            
+                            text [fnote_ref did=1] [fnote_ref did=2] text
+                            
+                            [fnote_def (id=1)
+                                Text of [i footnote 1]
+                            ]
+                            
+                            [fnote_def (id=2)
+                                Rodegast, P. (1987). [i Emmanuel's Book: A Manual for Living Comfortably in the Cosmos.] Bantam.
+                            ]
+                            
+                            [header Footnotes]
+                            [fnotes]
+                            ~~~
+                        ]
+                    ]
+                    [el 
+                        [p Result:]
+                        [html 
+                            ~~~
+                            <div style="border: 1px dotted grey; padding-left: 1em; padding-right: 1em;border-radius: 7px;">
+                            <p class="pml-paragraph">text <sup id="fnr__1" class="pml-footnote-ref"><a href="#1">1</a></sup> text</p>
+                            <p class="pml-paragraph">Advice for life <sup id="fnr__2" class="pml-footnote-ref"><a href="#2">Rodegast 1987</a></sup>.</p>
+                            <p class="pml-paragraph">text <sup id="fnr__3" class="pml-footnote-ref"><a href="#1">1</a></sup> <sup id="fnr__4" class="pml-footnote-ref"><a href="#2">2</a></sup> text</p>
+                            <div class="pml-header">Footnotes</div>
+                            <div class="pml-footnotes">
+                                <table>
+                                    <tr id="1" class="pml-footnote">
+                                        <td style="vertical-align: top;">1.</td>
+                                        <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__1">^</a><a href="#fnr__3">^</a></td>
+                                        <td>
+                                            <p class="pml-paragraph">Text of <i class="pml-italic">footnote 1</i></p>
+                                        </td>
+                                    </tr>
+                                    <tr id="2" class="pml-footnote">
+                                        <td style="vertical-align: top;">2.</td>
+                                        <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__2">^</a><a href="#fnr__4">^</a></td>
+                                        <td>
+                                            <p class="pml-paragraph">Rodegast, P. (1987). <i class="pml-italic">Emmanuel's Book: A Manual for Living Comfortably in the Cosmos.</i> Bantam. </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            </div>
+                            
+                            ~~~
+                        ]
+                    ]
+                    [el 
+                        [p HTML code generated:]
+                        [code 
+                            ~~~
+                            <p class="pml-paragraph">text <sup id="fnr__1" class="pml-footnote-ref"><a href="#1">1</a></sup> text</p>
+                            <p class="pml-paragraph">Advice for life <sup id="fnr__2" class="pml-footnote-ref"><a href="#2">Rodegast 1987</a></sup>.</p>
+                            <p class="pml-paragraph">text <sup id="fnr__3" class="pml-footnote-ref"><a href="#1">1</a></sup> <sup id="fnr__4" class="pml-footnote-ref"><a href="#2">2</a></sup> text</p>
+                            <div class="pml-header">Footnotes</div>
+                            <div class="pml-footnotes">
+                                <table>
+                                    <tr id="1" class="pml-footnote">
+                                        <td style="vertical-align: top;">1.</td>
+                                        <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__1">^</a><a href="#fnr__3">^</a></td>
+                                        <td>
+                                            <p class="pml-paragraph">Text of <i class="pml-italic">footnote 1</i></p>
+                                        </td>
+                                    </tr>
+                                    <tr id="2" class="pml-footnote">
+                                        <td style="vertical-align: top;">2.</td>
+                                        <td class="pml-footnote-backlink" style="vertical-align: top;"><a href="#fnr__2">^</a><a href="#fnr__4">^</a></td>
+                                        <td>
+                                            <p class="pml-paragraph">Rodegast, P. (1987). <i class="pml-italic">Emmanuel's Book: A Manual for Living Comfortably in the Cosmos.</i> Bantam. </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            ~~~
+                        ]
+                    ]
+                ]
+
             ]
 
         ]
